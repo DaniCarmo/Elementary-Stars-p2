@@ -1,3 +1,17 @@
+/*main body*/
 body {
     background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/*home logo and text divs*/
+.home {
+    
+}
+.logo {
+    height: 350px;
+    width: 630px;
+    object-fit: contain;
 }
