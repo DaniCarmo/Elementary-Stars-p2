@@ -2,16 +2,9 @@
 body {
     background-color: lightskyblue;
     display: flex;
-    height: 100vh;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
 }
 /*home logo and text divs*/
-.home {
-    
-}
-.logo {
-   
-}
