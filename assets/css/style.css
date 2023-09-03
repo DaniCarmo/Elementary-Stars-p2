@@ -9,7 +9,12 @@ body {
     font-family: 'Comic Neue', cursive;
 }
 /*home logo and text divs*/
-
+.home{
+    padding-top: 30px;
+}
+.text-area {
+    padding: 5px 5px 30px 5px;
+}
 
 /*username form*/
 .username-area {
@@ -19,13 +24,18 @@ body {
 .lets-play {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     padding: 20px;
 }
-
 form {
     border-radius: 25px;
     border: 2px solid navy;
+}
+.lets-play input {
+    border-radius: 30px;
+    border: 3px solid navy;
+    padding: 10px;
+    margin: 10px;
 }
 
 /*gamepage header*/
