@@ -6,5 +6,24 @@ body {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    font-family: 'Comic Neue', cursive;
 }
 /*home logo and text divs*/
+
+
+/*username form*/
+.username-area {
+    display: flex;
+    justify-content: center;
+}
+.lets-play {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+}
+
+form {
+    border-radius: 25px;
+    border: 2px solid navy;
+}
