@@ -9,7 +9,11 @@ body {
     font-family: 'Comic Neue', cursive;
     margin: 5px;
 }
-/*home logo and text divs*/
+/*images to fit and contain to divs*/
+.head-image{
+    object-fit: cover;
+}
+/*home and text divs*/
 .home{
     padding-top: 30px;
 }
