@@ -65,3 +65,10 @@ body {
     padding: 10px;
     margin: 10px;
 }
+
+/*score-area div*/
+.score-area {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
