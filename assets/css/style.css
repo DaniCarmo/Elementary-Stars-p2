@@ -7,6 +7,7 @@ body {
     text-align: center;
     flex-wrap: wrap;
     font-family: 'Comic Neue', cursive;
+    margin: 5px;
 }
 /*home logo and text divs*/
 .home{
