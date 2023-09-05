@@ -140,10 +140,10 @@ max-width: 400px;
     cursor: pointer;
     transition: all 0.3s; 
 }
-.btn:hover:not([disabled]) {
-    background: #222;
-    color: #fff;
+.btn :hover {
+    background-color: #fbb040;
 }
+
 .btn:disabled {
     cursor: no-drop;
 }
