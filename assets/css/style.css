@@ -26,7 +26,11 @@ max-width: 400px;
     padding-top: 30px;
 }
 .text-area {
-    padding: 5px 5px 30px 5px;
+    padding: 5px;
+}
+.text-area h1 {
+    color:#fff;
+    text-shadow: 2px 2px #ff8c00;
 }
 .text-area h2 {
     font-weight: lighter;
@@ -63,9 +67,12 @@ max-width: 400px;
 .gamepage-heading {
     padding: 40px 0;
 }
+.back-to-main {
+    text-decoration: none;
+}
 .back-to-main :hover {
     color: navy;
-    font-weight: bold;
+    font-weight: bolder;
 }
 /*levels*/
 .levels-area{
