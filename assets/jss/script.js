@@ -94,48 +94,48 @@ let smartQuestions = [
 ];
 let masterQuestions = [
     {
-        question: "What color is the body of the boat?",
+        question: "What color do you get if you mix blue and yellow?",
         answers: [
             { text: "Orange", correct: false },
-            { text: "Blue", correct: true },
+            { text: "Green", correct: true },
             { text: "Red", correct: false },
-            { text: "Green", correct: false }
+            { text: "Purple", correct: false }
         ]
     },
     {
-        question: "How many circle windows does the boat have?",
+        question: "How many colors are in a rainbow?",
         answers: [
-            { text: "Five", correct: false },
+            { text: "Seven", correct: true },
             { text: "Three", correct: false },
-            { text: "Ten", correct: false },
-            { text: "Eight", correct: true }
+            { text: "Five", correct: false },
+            { text: "Ten", correct: false }
         ]
     },
     {
-        question: "What animal can you see swimming by the boat?",
+        question: "What letter does Octopus and Orange start with?",
         answers: [
-            { text: "Fish", correct: true },
-            { text: "Dog", correct: false },
-            { text: "Elephant", correct: false },
-            { text: "Bird", correct: false }
+            { text: "O", correct: true },
+            { text: "P", correct: false },
+            { text: "E", correct: false },
+            { text: "Z", correct: false }
         ]
     },
     {
-        question: "What other animals swim in the sea?",
+        question: "What is four apples plus three apples?",
         answers: [
-            { text: "Cats", correct: false },
-            { text: "Giraffes", correct: false },
-            { text: "Sheep", correct: false },
-            { text: "Dolphins", correct: true }
+            { text: "Two apples", correct: false },
+            { text: "Six apples", correct: false },
+            { text: "One apple", correct: false },
+            { text: "Seven apples", correct: true }
         ]
     },
     {
-        question: "What sea life starts with the letter 'S'?",
+        question: "How many sides does a rectangle have?",
         answers: [
-            { text: "Whale", correct: false },
-            { text: "Shark", correct: true },
-            { text: "Octopus", correct: false },
-            { text: "Starfish", correct: false }
+            { text: "Six", correct: false },
+            { text: "Four", correct: true },
+            { text: "Three", correct: false },
+            { text: "None", correct: false }
         ]
     }
 ];
