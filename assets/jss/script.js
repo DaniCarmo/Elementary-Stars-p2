@@ -1,4 +1,4 @@
-let questions = [
+let easyQuestions = [
     {
         question: "What color is the body of the boat?",
         answers: [
@@ -29,18 +29,131 @@ let questions = [
     {
         question: "What other animals swim in the sea?",
         answers: [
-            { text: "Cats", correct: true },
+            { text: "Cats", correct: false },
             { text: "Giraffes", correct: false },
             { text: "Sheep", correct: false },
             { text: "Dolphins", correct: true }
         ]
+    },
+    {
+        question: "What sea life starts with the letter 'S'?",
+        answers: [
+            { text: "Whale", correct: false },
+            { text: "Shark", correct: true },
+            { text: "Octopus", correct: false },
+            { text: "Starfish", correct: false }
+        ]
     }
 ];
+let smartQuestions = [
+    {
+        question: "How many animals are in the picture above?",
+        answers: [
+            { text: "Five", correct: false },
+            { text: "Eleven", correct: false },
+            { text: "Nine", correct: true },
+            { text: "Seven", correct: false }
+        ]
+    },
+    {
+        question: "What color is the animal beginning with 'M'?",
+        answers: [
+            { text: "White", correct: false },
+            { text: "Pink", correct: false },
+            { text: "Yellow", correct: false },
+            { text: "Brown", correct: true }
+        ]
+    },
+    {
+        question: "What are the smallest and largest animals in the picture?",
+        answers: [
+            { text: "Mouse and Horse", correct: true },
+            { text: "Dog and Chicken", correct: false },
+            { text: "Bird and Sheep", correct: false },
+            { text: "Pig and Horse", correct: false }
+        ]
+    },
+    {
+        question: "Which animal's name comes first in the alphabet?",
+        answers: [
+            { text: "Dog", correct: false },
+            { text: "Chicken", correct: false },
+            { text: "Sheep", correct: false },
+            { text: "Bird", correct: true }
+        ]
+    },
+    {
+        question: "Where would you see these animals together?",
+        answers: [
+            { text: "Zoo", correct: false },
+            { text: "Farm", correct: true },
+            { text: "Circus", correct: false },
+            { text: "Playground", correct: false }
+        ]
+    }
+];
+let masterQuestions = [
+    {
+        question: "What color is the body of the boat?",
+        answers: [
+            { text: "Orange", correct: false },
+            { text: "Blue", correct: true },
+            { text: "Red", correct: false },
+            { text: "Green", correct: false }
+        ]
+    },
+    {
+        question: "How many circle windows does the boat have?",
+        answers: [
+            { text: "Five", correct: false },
+            { text: "Three", correct: false },
+            { text: "Ten", correct: false },
+            { text: "Eight", correct: true }
+        ]
+    },
+    {
+        question: "What animal can you see swimming by the boat?",
+        answers: [
+            { text: "Fish", correct: true },
+            { text: "Dog", correct: false },
+            { text: "Elephant", correct: false },
+            { text: "Bird", correct: false }
+        ]
+    },
+    {
+        question: "What other animals swim in the sea?",
+        answers: [
+            { text: "Cats", correct: false },
+            { text: "Giraffes", correct: false },
+            { text: "Sheep", correct: false },
+            { text: "Dolphins", correct: true }
+        ]
+    },
+    {
+        question: "What sea life starts with the letter 'S'?",
+        answers: [
+            { text: "Whale", correct: false },
+            { text: "Shark", correct: true },
+            { text: "Octopus", correct: false },
+            { text: "Starfish", correct: false }
+        ]
+    }
+];
+let difficulty = document.getElementById("difficulty").innerHTML;
 let questionElement = document.getElementById("question");
 let answerButton = document.getElementById("answer-buttons");
 let nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
+let questions = [];
+
+if (difficulty === "Kindergarten Stars / Easy-Peasy") {
+    questions = easyQuestions;
+} else if (difficulty === "Kindergarten Stars / Smartie Pants") {
+    questions = smartQuestions;
+} else {
+    questions = masterQuestions;
+}
 
 
 function startQuiz() {
