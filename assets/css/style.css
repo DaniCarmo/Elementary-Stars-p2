@@ -122,3 +122,10 @@ body {
     cursor: pointer;
     display: none;
 }
+/*add colors to answers to show correct or incorrect*/
+.correct {
+    background: #9aeabc;
+}
+.incorrect {
+    background: #ff9393;
+}

@@ -48,7 +48,8 @@ function startQuiz() {
     nextButton.innerHTML = "Next";
     showQuestions();
 }
-function showQuestions() {
+function showQuestion() {
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innterHTML = questionNo + ". " + currentQuestion.question;
@@ -58,5 +59,28 @@ function showQuestions() {
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButton.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
     })
+}
+function resetState() {
+    nextButton.style.display = "none";
+    while(answerButton.firstChild) {
+        answerButton.removeChild(answerButton.firstChild)
+    }
+}
+function selectAnswer() {
+    let selectedBtn = e.target;
+    let isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect) {
+        selectedBtn.classList.add("correct");
+    }else{
+        selectedBtn.classList.add("incorrect");
+    }
+}
+
+function startQuiz() {
+    
 }
