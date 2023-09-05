@@ -14,7 +14,7 @@ let questions = [
             { text: "Five", correct: false },
             { text: "Three", correct: false },
             { text: "Ten", correct: false },
-            { text: "Eight", correct: true}
+            { text: "Eight", correct: true }
         ]
     },
     {
@@ -36,11 +36,12 @@ let questions = [
         ]
     }
 ];
-let questionElement = document.getElementsByClassName("question")
-let answerButton = document.getElementsByClassName("answer-buttons");
-let nextButton = document.getElementsByClassName("next-btn");
+let questionElement = document.getElementById("question");
+let answerButton = document.getElementById("answer-buttons");
+let nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
+
 
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -53,60 +54,60 @@ function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    
+
     currentQuestion.answers.forEach(answer => {
         let button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButton.appendChild(button);
-        if(answer.correct){
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
-    })
+    });
 }
 function resetState() {
     nextButton.style.display = "none";
-    while(answerButton.firstChild) {
-        answerButton.removeChild(answerButton.firstChild)
+    while (answerButton.firstChild) {
+        answerButton.removeChild(answerButton.firstChild);
     }
 }
-function selectAnswer() {
+function selectAnswer(e) {
     let selectedBtn = e.target;
     let isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect) {
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-    }else{
+    } else {
         selectedBtn.classList.add("incorrect");
     }
     Array.from(answerButton.children).forEach(button => {
-        if(button.dataset.correct === "true"){
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     });
     nextButton.style.display = "block";
 }
-function showScore(){
+function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
-function handleNextButton(){
+function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
-    }else{
+    } else {
         showScore();
     }
 }
-nextButton.addEventListener("click", ()=> {
-    if(currentQuestionIndex < questions.length){
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
-    }else{
+    } else {
         startQuiz();
     }
-})
+});
 startQuiz();
