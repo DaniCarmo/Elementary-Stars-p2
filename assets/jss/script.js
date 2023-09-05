@@ -2,36 +2,36 @@ let questions = [
     {
         question: "What color is the body of the boat?",
         answers: [
-            { text: "Orange", correct: false }
-            { text: "Blue", correct: true }
-            { text: "Red", correct: false }
+            { text: "Orange", correct: false },
+            { text: "Blue", correct: true },
+            { text: "Red", correct: false },
             { text: "Green", correct: false }
         ]
     },
     {
         question: "How many circle windows does the boat have?",
         answers: [
-            { text: "Five", correct: false }
-            { text: "Three", correct: false }
-            { text: "Ten", correct: false }
+            { text: "Five", correct: false },
+            { text: "Three", correct: false },
+            { text: "Ten", correct: false },
             { text: "Eight", correct: true}
         ]
     },
     {
         question: "What animal can you see swimming by the boat?",
         answers: [
-            { text: "Fish", correct: true }
-            { text: "Dog", correct: false }
-            { text: "Elephant", correct: false }
+            { text: "Fish", correct: true },
+            { text: "Dog", correct: false },
+            { text: "Elephant", correct: false },
             { text: "Bird", correct: false }
         ]
     },
     {
         question: "What other animals swim in the sea?",
         answers: [
-            { text: "Cats", correct: true }
-            { text: "Giraffes", correct: false }
-            { text: "Sheep", correct: false }
+            { text: "Cats", correct: true },
+            { text: "Giraffes", correct: false },
+            { text: "Sheep", correct: false },
             { text: "Dolphins", correct: true }
         ]
     }
@@ -46,7 +46,7 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
-    showQuestions();
+    showQuestion();
 }
 function showQuestion() {
     resetState();
@@ -76,6 +76,7 @@ function selectAnswer() {
     let isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect) {
         selectedBtn.classList.add("correct");
+        score++;
     }else{
         selectedBtn.classList.add("incorrect");
     }
@@ -87,7 +88,24 @@ function selectAnswer() {
     })
     nextButton.style.display = "block"
 }
-
-function startQuiz() {
-
+function showScore(){
+    resetState();
+    questionElement.innerHTML + `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
 }
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < question.length) {
+        showQuestion();
+    }else{
+        showScore();
+    }
+}
+nextButton.addEventListener("click", ()=> {
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }else{
+        startQuiz();
+    }
+})
