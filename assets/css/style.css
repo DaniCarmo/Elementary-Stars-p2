@@ -147,10 +147,9 @@ max-width: 400px;
 .btn:disabled {
     cursor: no-drop;
 }
-.next-btn {
-    background: navy;
-    color: white;
-    font-weight: 500;
+#next-btn {
+    background: #fbb040;
+    font-weight: bold;
     width: 150px;
     border: 0;
     padding: 10px;
