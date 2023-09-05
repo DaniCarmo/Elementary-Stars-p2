@@ -10,11 +10,16 @@ body {
     margin: 5px;
 }
 /*images to fit and contain to divs*/
-.head-image{
-    object-fit: cover;
+.head-image {
+    max-width: 600px;
+}
+.footer-image {
+    max-width: 400px;
+    max-height: 250px;
+    align-self: center;
 }
 /*home and text divs*/
-.home{
+.home {
     padding-top: 30px;
 }
 .text-area {
