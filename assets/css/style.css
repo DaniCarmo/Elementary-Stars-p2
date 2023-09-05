@@ -40,7 +40,7 @@ max-width: 400px;
     width: 230px;
     padding: 20px;
     border-radius: 25px;
-    border: 2px solid #fbb040;
+    border: 3px solid #fbb040;
     background-color: #d9fbff;
 }  
 .lets-play input {
@@ -65,10 +65,11 @@ max-width: 400px;
     flex-direction: column;
 }
 .levels-area button {
+    background-color:aliceblue;
     width: 250px;
     align-self: center;
     border-radius: 30px;
-    border: 3px navy solid;
+    border: 3px solid #fbb040;
     padding: 20px;
     margin: 10px;
 }
@@ -88,6 +89,7 @@ max-width: 400px;
     max-width: 500px;
     margin: 100px 0;
     border-radius: 20px;
+    border: 3px solid #fbb040;
     padding: 10px;
     align-self: center;
 }

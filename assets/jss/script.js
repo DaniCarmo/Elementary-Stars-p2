@@ -35,7 +35,7 @@ let questions = [
             { text: "Dolphins", correct: true }
         ]
     }
-]
+];
 let questionElement = document.getElementsByClassName("question")
 let answerButton = document.getElementsByClassName("answer-buttons");
 let nextButton = document.getElementsByClassName("next-btn");
@@ -52,7 +52,7 @@ function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionElement.innterHTML = questionNo + ". " + currentQuestion.question;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
     
     currentQuestion.answers.forEach(answer => {
         let button = document.createElement("button");
@@ -85,18 +85,18 @@ function selectAnswer() {
             button.classList.add("correct");
         }
         button.disabled = true;
-    })
-    nextButton.style.display = "block"
+    });
+    nextButton.style.display = "block";
 }
 function showScore(){
     resetState();
-    questionElement.innerHTML + `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
 function handleNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex < question.length) {
+    if(currentQuestionIndex < questions.length) {
         showQuestion();
     }else{
         showScore();
@@ -109,3 +109,4 @@ nextButton.addEventListener("click", ()=> {
         startQuiz();
     }
 })
+startQuiz();
