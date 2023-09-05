@@ -20,7 +20,6 @@ body {
 .text-area {
     padding: 5px 5px 30px 5px;
 }
-
 /*username form*/
 .username-area {
     display: flex;
@@ -42,7 +41,6 @@ body {
     padding: 10px;
     margin: 10px;
 }
-
 /*gamepage header*/
 .gamepage-heading {
     padding: 40px 0;
@@ -51,7 +49,6 @@ body {
     color: navy;
     font-weight: bold;
 }
-
 /*levels*/
 .levels-area{
     padding: 40px 0;
@@ -70,10 +67,58 @@ body {
 .levels-area form {
     padding: 10px 0;
 }
-
 /*score-area div*/
 .score-area {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+}
+/*questions and answers container*/
+.quiz-container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.quiz-container h2{
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #fbb040;
+    padding: 20px;
+}
+.quiz {
+    padding: 20px 0;
+}
+.quiz h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn {
+    background: white;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #fbb040;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s; 
+}
+.btn:hover {
+    background: white;;
+}
+.next-btn {
+    background: navy;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
 }
