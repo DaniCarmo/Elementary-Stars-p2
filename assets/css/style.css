@@ -11,11 +11,14 @@ body {
 }
 /*images to fit and contain to divs*/
 .head-image {
-    max-width: 600px;
+    max-width: 500px;
+}
+.other-images {
+max-width: 400px;
 }
 .footer-image {
-    max-width: 400px;
-    max-height: 250px;
+    max-width: 280px;
+    max-height: 350px;
     align-self: center;
 }
 /*home and text divs*/
