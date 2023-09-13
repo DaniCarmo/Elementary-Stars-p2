@@ -1,3 +1,34 @@
+const form = document.getElementById("form");
+const userName = document.getElementById("username");
+
+form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector(".error");
+    errorDisplay.innerText = message;
+    inputControl.classList.add("error");
+    inputControl.classList.remove("success");
+};
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector(".error");
+    errorDisplay.innerText = "";
+    inputControl.classList.add("success");
+    inputControl.classList.remove("error");
+};
+const validateInputs = () => {
+    const usernameValue = userName.value.trim();
+    if (usernameValue === "") {
+        setError(userName, "Please enter a username!");
+    } else {
+        setSuccess(userName);
+    }
+};
+
 let easyQuestions = [
     {
         question: "What color is the body of the boat?",

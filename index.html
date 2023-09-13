@@ -25,10 +25,13 @@
         <h2 class="main-text">Practice the Alphabet, Colors, Shapes & Numbers!</h2>
     </div>
     <div class="username-area">
-        <form class="lets-play" method="GET" action="game.html">
-            <label>Enter Username:</label>
-            <input type="text" required name="username" aria-label="enter username" maxlength="20">
-            <input id="play" type="submit" value="Let's Play!">
+        <form id="form" class="lets-play" method="GET" action="game.html">
+            <div class="input-control">
+                <label>Enter Username:</label>
+                <input type="text" id="username" name="username" aria-label="enter username" maxlength="20">
+                <div class="error"></div>
+            </div>
+                <input id="play" type="submit" value="Let's Play!">
         </form>
     </div>
     <script src="assets/jss/script.js"></script>
