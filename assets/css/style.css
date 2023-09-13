@@ -112,6 +112,19 @@ h1 {
 #master {
     background-color: #d7fddf;
 }
+/*nav bar on levels pages*/
+.navbar {
+    max-width: 400px;
+}
+.navbar a {
+    padding: 30px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: navy;
+    font-weight: bolder;
+    text-decoration: underline;
+}
 /*score-area div*/
 .score-area {
     display:flex;
