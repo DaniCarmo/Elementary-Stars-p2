@@ -40,7 +40,13 @@
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
-            <button id="next-btn">Next</button>
+            <button type="submit" id="next-btn" onclick="openPopup()">Next</button>
+            <div class="popup" id="popup">
+                <img src="assets/images/stars.png">
+                <h2>Great Job!</h2>
+                <p>Did you know you can follow our channel on Youtube for some fun learning vidoes, check us out here!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
         </div>
     </div>
     <script src="assets/jss/script.js"></script>
