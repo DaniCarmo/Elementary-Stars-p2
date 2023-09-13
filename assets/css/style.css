@@ -91,17 +91,26 @@ h1 {
     flex-direction: column;
 }
 .levels-area button {
-    background-color:white;
-    width: 250px;
+    width: 350px;
     align-self: center;
     border-radius: 30px;
     border: 3px solid #fbb040;
     padding: 20px;
     margin: 10px;
     font-weight: bold;
+    font-family: 'Comic Neue', cursive;
 }
 .levels-area form {
     padding: 10px 0;
+}
+#easy {
+    background-color: #ffd1d1;
+}
+#smart {
+    background-color: #fbffde;
+}
+#master {
+    background-color: #d7fddf;
 }
 /*score-area div*/
 .score-area {
