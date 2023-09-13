@@ -21,19 +21,21 @@ max-width: 400px;
     max-height: 350px;
     align-self: center;
 }
+
+/*heading*/
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px #ff8c00;
+    margin-block-end: 0;
+    margin-block-start: 1.5em;
+    font-size: 40px;
+}
 /*home and text divs*/
 .home {
     padding-bottom: 30px;
 }
 .text-area {
     padding: 5px;
-}
-.text-area h1 {
-    color:#fff;
-    text-shadow: 2px 2px #ff8c00;
-    margin-block-end: 0;
-    margin-block-start: 1.5em;
-    font-size: 40px;
 }
 .main-text {
     font-weight: lighter;
