@@ -25,11 +25,11 @@
         <h2 class="main-text">Practice the Alphabet, Colors, Shapes & Numbers!</h2>
     </div>
     <div class="username-area">
-        <form id="form" class="lets-play" method="GET" action="game.html">
+        <form onsubmit="return validateForm()" name="myForm" id="form" class="lets-play" method="GET" action="game.html">
             <div class="input-control">
                 <label>Enter Username:</label>
                 <input type="text" id="username" name="username" aria-label="enter username" maxlength="20">
-                <div class="error"></div>
+                <div id="error"></div>
             </div>
                 <input id="play" type="submit" value="Let's Play!" onclick="">
         </form>

@@ -1,36 +1,13 @@
 const form = document.getElementById("form");
 const userName = document.getElementById("username");
 
-form.addEventListener("submit", e => {
-    e.preventDefault();
-
-    validateInputs();
-});
-const setError = (element, message) => {
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector(".error");
-    errorDisplay.innerText = message;
-    inputControl.classList.add("error");
-    inputControl.classList.remove("success");
-}
-/*
-const setSuccess = element => {
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector(".error");
-    errorDisplay.innerText = "";
-    inputControl.classList.add("success");
-    inputControl.classList.remove("error");
-};
-*/
-const validateInputs = () => {
-    const usernameValue = userName.value.trim();
-    if (usernameValue === "") {
-        setError(userName, "Please enter a username!");
-    } else {
-        form.submit()
+function validateForm() {
+    let x = document.forms["myForm"]["username"].value;
+    if (x == "") {
+        document.getElementById("error").innerHTML = ("Please enter a username!");
+        return false;
     }
-};
-
+}
 let easyQuestions = [
     {
         question: "What color is the body of the boat?",
@@ -172,6 +149,7 @@ let masterQuestions = [
         ]
     }
 ];
+
 let difficulty = document.getElementById("difficulty").innerHTML;
 let questionElement = document.getElementById("question");
 let answerButton = document.getElementById("answer-buttons");
