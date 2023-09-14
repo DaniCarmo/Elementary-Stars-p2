@@ -28,7 +28,7 @@ h1 {
     text-shadow: 2px 2px #ff8c00;
     margin-block-end: 0;
     margin-block-start: 1.5em;
-    font-size: 40px;
+    font-size: 50px;
     padding-bottom: 40px;
 }
 /*home and text divs*/
@@ -96,12 +96,12 @@ h1 {
     height: 13px;
 }
 /*gamepage header*/
-.gamepage-heading {
-    padding: 40px 0;
-}
 .back-to-main:hover {
 color: maroon;
 text-decoration: underline;
+}
+.starDiv {
+    padding: 40px;
 }
 
 /*levels*/
@@ -115,7 +115,7 @@ text-decoration: underline;
     color: darkslategray;
 }
 .levels-area button {
-    width: 350px;
+    width: 300px;
     align-self: center;
     border-radius: 30px;
     border: 2px solid #d15d46;
