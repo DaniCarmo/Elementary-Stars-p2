@@ -94,13 +94,11 @@ h1 {
 .gamepage-heading {
     padding: 40px 0;
 }
-.back-to-main {
-    text-decoration: none;
+.back-to-main:hover {
+color: maroon;
+text-decoration: underline;
 }
-.back-to-main :hover {
-    color: navy;
-    font-weight: bolder;
-}
+
 /*levels*/
 .levels-area{
     padding: 40px 0;
@@ -112,7 +110,7 @@ h1 {
     width: 350px;
     align-self: center;
     border-radius: 30px;
-    border: 3px solid #fbb040;
+    border: 2px solid #d15d46;
     padding: 20px;
     margin: 10px;
     font-weight: bold;
@@ -135,19 +133,21 @@ h1 {
     max-width: 400px;
     padding-bottom: 30px;
 }
+
+.back-to-main,
 .navbar a {
     padding: 15px;
     text-decoration: none;
-    color: #fbb040;
+    color: #d15d46;
     font-size: 18px;
     font-weight: bold;
     border-radius: 25px;
-    border: solid 2px #fbb040;
+    border: solid 2px #d15d46;
     background-color: white;
 }
 .navbar a:hover {
-    color: navy;
-    font-weight: bolder;
+    color: maroon;
+    font-weight: 800;
     text-decoration: underline;
 }
 /*score-area div*/
@@ -163,7 +163,7 @@ h1 {
     max-width: 500px;
     margin: 50px 0;
     border-radius: 20px;
-    border: 3px solid #fbb040;
+    border: 3px solid #d15d46;
     padding: 10px;
     align-self: center;
 }
@@ -184,7 +184,7 @@ h1 {
     background: white;
     font-weight: 500;
     width: 100%;
-    border: 1px solid #fbb040;
+    border: 1px solid #d15d46;
     margin: 10px 0;
     padding: 10px;
     text-align: left;
@@ -193,14 +193,14 @@ h1 {
     transition: all 0.3s; 
 }
 .btn :hover {
-    background-color: #fbb040;
+    background-color: #d15d46;
 }
 
 .btn:disabled {
     cursor: no-drop;
 }
 #next-btn {
-    background: #fbb040;
+    background: #d15d46;
     font-weight: bold;
     width: 150px;
     border: 0;
