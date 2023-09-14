@@ -1,6 +1,3 @@
-const form = document.getElementById("form");
-const userName = document.getElementById("username");
-
 function validateForm() {
     let x = document.forms["myForm"]["username"].value;
     if (x == "") {
