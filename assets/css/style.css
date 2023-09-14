@@ -39,8 +39,9 @@ h1 {
     padding: 5px;
 }
 .main-text {
-    font-weight: lighter;
+    font-weight: bold;
     padding: 0 5px 30px;
+    color: darkslategray;
 }
 /*username form*/
 .username-area {
@@ -62,6 +63,7 @@ h1 {
 }  
 .lets-play label {
     font-weight: bold;
+    color: darkslategray;
 }
 .lets-play input {
     border-radius: 30px;
@@ -73,6 +75,8 @@ h1 {
     background-color: #d15d46;
     font-weight: bold;
     color: white;
+    font-size: 16px;
+    font-family: 'Comic Neue', cursive;
 }
 .input-control {
     display: flex;
@@ -107,6 +111,9 @@ text-decoration: underline;
     justify-content: center;
     flex-direction: column;
 }
+.levels-area h2 {
+    color: darkslategray;
+}
 .levels-area button {
     width: 350px;
     align-self: center;
@@ -116,6 +123,8 @@ text-decoration: underline;
     margin: 10px;
     font-weight: bold;
     font-family: 'Comic Neue', cursive;
+    color: darkslategray;
+    font-size: 16px;
 }
 .levels-area form {
     padding: 10px 0;
@@ -171,11 +180,15 @@ text-decoration: underline;
 .quiz-container h2{
     font-size: 25px;
     font-weight: 600;
-    border-bottom: 1px solid #fbb040;
+    border-bottom: 2px solid #fbb040;
     padding: 20px;
+    font-family: 'Comic Neue', cursive;
+    color: #fbb040
 }
 .quiz {
     padding: 20px 0;
+    font-family: 'Comic Neue', cursive;
+    color: darkslategray;
 }
 .quiz h3 {
     font-size: 18px;
@@ -183,8 +196,8 @@ text-decoration: underline;
 }
 .btn {
     background: white;
-    font-weight: 500;
-    width: 100%;
+    font-weight: bold;
+    width: 70%;
     border: 1px solid #d15d46;
     margin: 10px 0;
     padding: 10px;
@@ -192,6 +205,8 @@ text-decoration: underline;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s; 
+    font-family: 'Comic Neue', cursive;
+    color: darkslategray;
 }
 .btn :hover {
     background-color: #d15d46;
