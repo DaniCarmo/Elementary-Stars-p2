@@ -186,7 +186,6 @@ if (difficulty === "Kindergarten Stars / Easy-Peasy") {
     questions = masterQuestions;
 }
 
-
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -255,3 +254,12 @@ nextButton.addEventListener("click", () => {
     }
 });
 startQuiz();
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
