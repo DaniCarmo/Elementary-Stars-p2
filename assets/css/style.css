@@ -29,6 +29,7 @@ h1 {
     margin-block-end: 0;
     margin-block-start: 1.5em;
     font-size: 40px;
+    padding-bottom: 40px;
 }
 /*home and text divs*/
 .home {
@@ -130,7 +131,7 @@ text-decoration: underline;
 }
 /*nav bar on levels pages*/
 .navbar {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .back-to-main,
