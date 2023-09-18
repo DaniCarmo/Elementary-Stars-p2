@@ -306,7 +306,7 @@ Manual testing was carried out on all elements and features of the site, ensurin
 
 1. Click the 'Settings' Tab.
 2. Scroll Down to the Git Hub Pages Heading.
-3. Select 'Master Branch' as the source.
+3. Select main branch as the source.
 4. Click the Save button.
 5. Click on the link to go to the live deployed page. Link to live wesbite: [South West Yoga](https://danicarmo.github.io/South-West-Yoga-P1/)
 
