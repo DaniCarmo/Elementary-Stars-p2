@@ -17,6 +17,7 @@ body {
 
 .other-images {
     max-width: 300px;
+    padding-top: 30px;
 }
 
 .footer-image {
@@ -67,7 +68,7 @@ h1 {
     padding: 20px;
     border-radius: 25px;
     border: 3px solid #d15d46;
-    background-color: #d9fbff;
+    background-color: white;
     justify-content: center;
 }
 
@@ -78,13 +79,13 @@ h1 {
 
 .lets-play input {
     border-radius: 30px;
-    border: 2px solid #d15d46;
+    border: 2px solid #ff8c00;
     padding: 10px;
     margin: 10px;
 }
 
 .lets-play #play {
-    background-color: #d15d46;
+    background-color: #ff8c00;
     font-weight: bold;
     color: white;
     font-size: 16px;
@@ -228,11 +229,11 @@ h1 {
     background: white;
     font-weight: bold;
     width: 70%;
-    border: 1px solid #d15d46;
+    border: 2px solid #ff8c00;
     margin: 10px 0;
     padding: 10px;
     text-align: left;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s;
     font-family: 'Comic Neue', cursive;
