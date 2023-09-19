@@ -209,11 +209,21 @@ function selectAnswer(e) {
     });
     nextButton.style.display = "block";
 }
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
+
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
+    openPopup();
 }
 function handleNextButton() {
     currentQuestionIndex++;
@@ -231,12 +241,3 @@ nextButton.addEventListener("click", () => {
     }
 });
 startQuiz();
-
-let popup = document.getElementById("popup");
-
-function openPopup() {
-    popup.classList.add("open-popup");
-}
-function closePopup() {
-    popup.classList.remove("open-popup");
-}
