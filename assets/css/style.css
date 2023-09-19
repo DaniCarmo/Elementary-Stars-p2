@@ -133,6 +133,7 @@ h1 {
 
 .levels-area h2 {
     color: darkslategray;
+    font-size: 2em;
 }
 
 .levels-area button {
@@ -145,7 +146,7 @@ h1 {
     font-weight: bold;
     font-family: 'Comic Neue', cursive;
     color: darkslategray;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .levels-area form {
