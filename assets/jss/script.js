@@ -241,3 +241,5 @@ nextButton.addEventListener("click", () => {
     }
 });
 startQuiz();
+
+openPopup();
