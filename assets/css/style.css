@@ -9,13 +9,16 @@ body {
     font-family: 'Comic Neue', cursive;
     margin: 5px;
 }
+
 /*images to fit and contain to divs*/
 .head-image {
     max-width: 500px;
 }
+
 .other-images {
-max-width: 300px;
+    max-width: 300px;
 }
+
 .footer-image {
     max-width: 280px;
     max-height: 350px;
@@ -32,24 +35,29 @@ h1 {
     font-size: 50px;
     padding-bottom: 40px;
 }
+
 /*home and text divs*/
 .home {
     padding-bottom: 30px;
 }
+
 .text-area {
     padding: 5px;
 }
+
 .main-text {
     font-weight: bold;
     padding: 0 5px 30px;
     color: darkslategray;
 }
+
 /*username form*/
 .username-area {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
 }
+
 .lets-play {
     display: flex;
     flex-direction: column;
@@ -61,17 +69,20 @@ h1 {
     border: 3px solid #d15d46;
     background-color: #d9fbff;
     justify-content: center;
-}  
+}
+
 .lets-play label {
     font-weight: bold;
     color: darkslategray;
 }
+
 .lets-play input {
     border-radius: 30px;
     border: 2px solid #d15d46;
     padding: 10px;
     margin: 10px;
 }
+
 .lets-play #play {
     background-color: #d15d46;
     font-weight: bold;
@@ -79,10 +90,12 @@ h1 {
     font-size: 16px;
     font-family: 'Comic Neue', cursive;
 }
+
 .input-control {
     display: flex;
     flex-direction: column;
 }
+
 .input-control.success input {
     border-color: #09c372;
 }
@@ -96,25 +109,29 @@ h1 {
     font-size: 9px;
     height: 13px;
 }
+
 /*gamepage header*/
 .back-to-main:hover {
-color: maroon;
-text-decoration: underline;
+    color: maroon;
+    text-decoration: underline;
 }
+
 .starDiv {
     padding: 40px;
 }
 
 /*levels*/
-.levels-area{
+.levels-area {
     padding: 40px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
 .levels-area h2 {
     color: darkslategray;
 }
+
 .levels-area button {
     width: 200px;
     align-self: center;
@@ -127,18 +144,23 @@ text-decoration: underline;
     color: darkslategray;
     font-size: 16px;
 }
+
 .levels-area form {
     padding: 10px 0;
 }
+
 #easy {
     background-color: #ffb3ba;
 }
+
 #smart {
     background-color: #ffffba;
 }
+
 #master {
     background-color: #baffc9;
 }
+
 /*nav bar on levels pages*/
 .navbar {
     padding-bottom: 40px;
@@ -156,17 +178,20 @@ text-decoration: underline;
     background-color: white;
     margin: 20px;
 }
+
 .navbar a:hover {
     color: maroon;
     font-weight: 800;
     text-decoration: underline;
 }
+
 /*score-area div*/
 .score-area {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 /*quiz container*/
 .quiz-container {
     background: white;
@@ -178,7 +203,8 @@ text-decoration: underline;
     padding: 10px;
     align-self: center;
 }
-.quiz-container h2{
+
+.quiz-container h2 {
     font-size: 25px;
     font-weight: 600;
     border-bottom: 2px solid #fbb040;
@@ -186,15 +212,18 @@ text-decoration: underline;
     font-family: 'Comic Neue', cursive;
     color: #fbb040
 }
+
 .quiz {
     padding: 20px 0;
     font-family: 'Comic Neue', cursive;
     color: darkslategray;
 }
+
 .quiz h3 {
     font-size: 18px;
     font-weight: 600;
 }
+
 .btn {
     background: white;
     font-weight: bold;
@@ -205,10 +234,11 @@ text-decoration: underline;
     text-align: left;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s; 
+    transition: all 0.3s;
     font-family: 'Comic Neue', cursive;
     color: darkslategray;
 }
+
 .btn :hover {
     background-color: #d15d46;
 }
@@ -216,6 +246,7 @@ text-decoration: underline;
 .btn:disabled {
     cursor: no-drop;
 }
+
 #next-btn {
     background: #d15d46;
     font-weight: bold;
@@ -227,44 +258,64 @@ text-decoration: underline;
     cursor: pointer;
     display: none;
 }
+
 /*add colors to answers to show correct or incorrect*/
 .correct {
     background: #9aeabc;
 }
+
 .incorrect {
     background: #ff9393;
 }
+
 /*modal pop up*/
 .popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.popupContent {
     width: 350px;
     background: white;
     border-radius: 10px;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
+    transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 30px 30px;
     color: #333;
-    visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
+
 .open-popup {
+    opacity: 1;
     visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .popup img {
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .popup h2 {
     font-size: 38px;
     font-family: 'Comic Neue', cursive;
     margin: 30px 0 10px;
 }
+
 .popup button {
     width: 100%;
     margin-top: 50px;
