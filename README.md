@@ -1,6 +1,6 @@
 # Kindergarten Stars
 
-![responsive]
+![responsive]()
 
 # Table of Contents
 
