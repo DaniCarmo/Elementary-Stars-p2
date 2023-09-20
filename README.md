@@ -11,25 +11,21 @@
 - [Features](#features)
   - [Existing features](#existing-features)
     - [Navigation Bar](#navigation-bar)
-    - [Home Page Banner](#home-page-banner)
-    - [Newsletter sign up](#newsletter-sign-up)
-    - [Benefits Section](#benefits-section)
-    - [About Page](#about-page)
-    - [Aside](#aside)
-    - [Video](#video)
-    - [Gallery](#gallery)
-    - [Timetables](#timetables)
-    - [iframe](#iframe)
-    - [Scroll to Top Button](#scroll-to-top-button)
+    - [Home Page Logo](#home-page-logo)
+    - [Username Input](#username-input)
+    - [Levels Page](#levels-page)
+    - [Quiz Pictures](#quiz-pictures)
+    - [Quiz Container](#quiz-container)
+    - [Hidden Next Button](#hidden-next-button)
+    - [Highscore](#highscore)
+    - [Modal](#modal)
   - [Future Features](#future-features)
-    - [Online class booking system](#online-class-booking-system)
-    - [Blog](#blog)
+    - [Multiplayer games](#multiplayer-games)
 - [Design of Website](#design-of-website)
   - [Wireframes](#wireframes)
     - [Home Page](#home-page)
-    - [About Page](#about-page-1)
-    - [Gallery](#gallery-1)
-    - [Classes](#classes)
+    - [Game Page - Chose a Level](#game-page---chose-a-level)
+    - [Levels 1-3](#levels-1-3)
   - [Fonts](#fonts)
   - [Color Scheme](#color-scheme)
   - [Images](#images)
@@ -55,23 +51,22 @@
 
 # Introduction
 
-SWY is for people based in County Kerry, who are of all ages and abilities and would like to practice yoga and meditation with some like-minded individuals in a relaxed beach environment. It is a community of open and friendly people who will always welcome new commers. This website is to provide a fun and friendly vibe for those involved and to be inviting to those who may wish to participate and join our community, with some photos of past classes and events, as well as easy to read timetables and a map to our location. The site is targeted at someone who wishes to participate in yoga and meditation at an easy going pace, with no pressure to have previous knowledge or experience.
+Kindergraten Stars is a fun and interactive quiz for children aged three to six years of age, who can practice and increase their knowledge of the alphabet, colors, shapes and numbers. This quiz is to provide a fun and friendly vibe for both children and their guardians and provides an inviting space that makes learning fun at home. Players can play as many times as they like while logging their highscore and practice each level to reinforce what they learn at creche/school.
 
 # User Goals and Stories
 
 As a first-time user I want to:
 
-- Easily navigate through the site and learn more about the benefits of mindfulness, namely yoga and meditation
+- Easily navigate through the site and go to the appropriate level for each players ability
 - Be able to easily identify the purpose of the site
-- Find class timetables quickly and effortlessly
 - View the website on both mobile and desktop devices
-- Get a sense of community and welcoming from the South West Yoga group
-- Interact with SWY by following on the various social media platforms and signing up to the newsletter
+- Get a sense of community and welcoming
+- Interact with the Elementary Stars by following learning videos on the YouTube channel
 
 As a returning user I want to:
 
-- Check to see if there are any new photos from the clubs activities
-- Find class timetables quickly and effortlessly
+- Practice over and over again to gain confidence and knowledge
+- Keep track of highscores
 - View the website on both mobile and desktop devices
 
 # Features
@@ -80,68 +75,50 @@ As a returning user I want to:
 
 ### Navigation Bar
 
-- Featured on all of the four pages, the full responsive navigation bar includes links to the Home page, About us, Gallery, Class Timetable page as well as links to social media profiles. It is identical in each page to allow for easy navigation.
-- This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+- Featured on the game.html page to return Home, as well as the three levels pages to either return Home or go back to the game page to chose a level, the fully responsive navigation bar includes two links. It is identical on each page to allow for easy navigation.
+- This will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
   
-### Home Page Banner
+### Home Page Logo
 
-- The landing includes a photograph with text overlay to show the user the logo with a catchline, to emphasize what South West Yoga aims to do.
-- This section introduces the user to South West Yoga with a gentle pastel color scheme and images to create a fun and relaxed vibe, that follows across the site.
+- The landing includes the quiz name "Kindergarten Stars" with a logo picture of an open book with pop up features.
+- This section introduces the user to Kindergraten Stars with fun colors and a child friendly vibe and cartton pictures, that follows across the site.
   
-### Newsletter sign up
+### Username Input
 
-- This bar will appear on all pages of the site to encourage the user to sign up to a newsletter to stay updated on class timetable updates or find out about events and news. This bar mimics the header and nav bar section to provide a better user experience as the user can easily identify where to sign up.
+- This username form will allow the players to enter a username which will be tracked by the site and linked to their highscore, to provide a better user experience as the user can keep record of their highscore each time they play or log back in to the quiz.
+- This form also uses javascript form validation to ensure the player enters a username before they can carry on with the quiz.
   
-### Benefits Section
+### Levels Page
 
-- This user will see the value of participating in South West yoga classes and what they could gain from their experience. This should encourage the user to sign up to our newsletter to stay updated and click on the timetable links available in the benefit boxes to check out class times.
-- This section also recycles the same homepage image from the top of the page so this landing page has a seamless flow and is easy on the eye for the user.
+- This page allows the user to chose a level and the levels have kid-friendly names so they can be identified by a child as to how easy or hard they are, level one being the easiest "Easy-peasy", level two "Smarty Pants" is for confident players, and finally level three is for advanced players "Quiz Master".
+- The level buttons are large and color coded to help a child chose a level easily and upon return they will be able to recognice each level by the color.
+- The page also has an image of a smiling cartoon star to reflect the name of the quiz "Elementary Stars" and provides a light and fun spirit that is also easy on the eye for the user.
   
-### About Page
+### Quiz Pictures
 
-- This page holds the main header again to show the flow of the whole site. The About section gives the user an insight in to the life of our South West Yoga teacher and group facilitator, bringing the user closer to the experience and building a bond.
+- ...
+
+### Quiz Container
+
+- ...
   
-### Aside
+### Hidden Next Button
 
-- The aside talks a little about Mindfulness and the importance of daily practice, the layout draws the users eye down through the page in a gentle way and across the page when viewed on desktop. This section is to provide the user with some more benefits of introducing yoga and meditation in to your daily life, reiterating the benefits section on the Home page, and encouraging the user to become a SWY member.
-
-### Video
-
-- A video on mindfulness is included in to the about page so the user can have more visual and audio information on the topic and generate interest in the benefits of mindfulness.
-
-![video](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/video.PNG?raw=true)
+- ...
   
-### Gallery
+### Highscore
 
-- The gallery will provide the user with fun and informative supporting images to see what the meet ups look like.
+- ...
   
-- This section is valuable to the user as they will be able to easily understand what the classes look like and what they involve, as well as showcasing the various events throughout the year.
-  
-### Timetables
+### Modal
 
-- This page will allow the user to view the weekly timetables for both yoga and meditation classes, the timetables are easily laid out to provide good user experience and the newsletter bar is again featured here to encourage the user to sign up for more news and announcements.
-  
-### iframe
-
-![iframe](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/iframe.PNG?raw=true)
-
-- The fourth page also contains a Google maps iframe, this is to provide the user with more information as to where Banna beach is located if they are unfamiliar with the location; this enriches the site and provide more context to the user about the group and beach activities.
-  
-### Scroll to Top Button
-
-![scroll](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/images/red-arrow.png?raw=true)
-
-- This feature will exist on the bottom of all pages and allow the user to jump to the top of the page, which is very helpful when viewing on mobile or smaller tablet screens.
+- ...
   
 ## Future Features
 
-### Online class booking system
+### Multiplayer games
 
-- An online booking system could be introduced in the future, this will enable participants to view any live updates to class times, as well as limit the classes to a maximum number. This will also support the group facilitator with identifying class numbers and preparing sessions in advance, identifying popular class times and recognizing in advance when a new member will be joining the class.
-  
-### Blog
-
-The addition of a blog to the site would engage the user more and create more of a relationship bewteen the user and the site/business. A blog that is regularly updated and linked to the site would be a future feature that would enhance the user experience and provide more content to the website.
+- ...
 
 # Design of Website
 
@@ -149,27 +126,9 @@ The addition of a blog to the site would engage the user more and create more of
 
 ### Home Page
 
-![homepage-mobile](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/1-Homepage%20Mobile.png?raw=true)
-![homepage-tablet](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/1-Homepage%20Tablet.png?raw=true)
-![homepage-desktop](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/1-Homepage%20Desktop.png?raw=true)
+### Game Page - Chose a Level
 
-### About Page
-
-![about-mobile](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/2-About-Me%20Mobile.png?raw=true)
-![about-tablet](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/2-About-Me%20Tablet.png?raw=true)
-![about-desktop](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/2-About-Me%20Desktop.png?raw=true)
-
-### Gallery
-
-![gallery-mobile](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/3-Gallery%20Mobile.png?raw=true)
-![gallery-tablet](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/3-Gallery%20Tablet.png?raw=true)
-![gallery-desktop](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/3-Gallery%20Desktop.png?raw=true)
-
-### Classes
-
-![classes-mobile](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/4-Classes%20Mobile.png?raw=true)
-![classes-tablet](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/4-Class%20Tablet.png?raw=true)
-![classes-desktop](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/4-Class%20Desktop.png?raw=true)
+### Levels 1-3
 
 ## Fonts
 
@@ -185,7 +144,6 @@ The color scheme is based around a sunset, bringing in purple, red and peachy-pi
 
 The main color used throughout is #F88379 and the background color for the aside was also inspired by the hero image, taking the deeper purple colors I went with #705260.
 
-![color-scheme](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/color-scheme.PNG?raw=true)
 
 ## Images
 
@@ -195,17 +153,15 @@ The Gallery page also has images from Pexel that show people practicing yoga and
 
 # Languages
 
-The two languages used are HTML and CSS.
+The languages used are HTML, CSS and Javascript.
 
 # Technologies used
 
 - Wireframe.cc was used to create the wireframes
 - Google Fonts was used for the fonts
-- Fontawesome was used for the social media icons
-- Google maps was used to provide a map link
 - Github was used for hosting the site and storing the data and files
 - Google Chrome Developer Tools were used throughout to inspect elements and assist with troubleshooting and debugging
-- [Image Color Picker](https://imagecolorpicker.com/en) was used to get color from banner image to use as background color in case of image failing to load, as the text is white so a colored background is required
+- [Image Color Picker](https://imagecolorpicker.com/en) was used to get color from the homepage image to use on the form and quiz border and text
 - [Onlinecovert.com](https://www.onlineconvert.com/image-converter) to convert main large images from .jpg to .webp, as suggested by prompt after Lighthouse analysis in dev tools testing
   
 # Testing
@@ -214,11 +170,11 @@ The two languages used are HTML and CSS.
 
 ### HTML
 
-Error found on newsletter form html pages, submit button was renamed to subscribe using 'label' attribute instead of 'value', error now fixed
+...
 
 ### CSS
 
-No errors were returned after passing the website through the W3C CSS Validator.
+...
 
 ## Browser Compatability
 
@@ -230,7 +186,7 @@ The website was tested on the following browsers and was responsive and compatib
 
 ## Unfixed Bugs
 
-Most bugs identified were fixed. The one identified and unfixed relates to Github not supporting the POST action method for the newsletter sign up form, after trouleshooting it was decided to change the method from POST to GET. Troubleshooting Q&As on stackoverflow.com suggested this method for test environments and when not using JS.
+...
 
 ## Responsiveness
 
@@ -308,7 +264,7 @@ Manual testing was carried out on all elements and features of the site, ensurin
 2. Scroll Down to the Git Hub Pages Heading.
 3. Select main branch as the source.
 4. Click the Save button.
-5. Click on the link to go to the live deployed page. Link to live wesbite: [South West Yoga](https://danicarmo.github.io/South-West-Yoga-P1/)
+5. Click on the link to go to the live deployed page. Link to live wesbite: [Kindergarten Stars]
 
 ## Run Project Locally
 
