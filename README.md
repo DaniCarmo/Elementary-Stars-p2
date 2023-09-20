@@ -1,6 +1,6 @@
 # Kindergarten Stars
 
-![responsive]()
+![responsive](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/ui-dev.PNG?raw=true)
 
 # Table of Contents
 
