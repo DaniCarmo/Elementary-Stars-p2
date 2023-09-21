@@ -15,7 +15,7 @@ function homeStorage(){
 
     if (userNameValue) {
         document.getElementById("username").value = userNameValue;
-        document.getElementById("welcomeback").innerHTML = ("Welcome back " + userNameValue + "! Let's try beat your last score of " + scoreValue);
+        document.getElementById("welcomeback").innerHTML = ("Welcome back " + userNameValue + "! Let's try beat your last score of " + scoreValue + "!");
     }
 }
 
