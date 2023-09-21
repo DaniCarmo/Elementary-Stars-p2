@@ -1,10 +1,24 @@
 function validateForm() {
-    let x = document.forms["myForm"]["username"].value;
-    if (x == "") {
+    let nameValue = document.forms["myForm"]["username"].value;
+    if (nameValue == "") {
         document.getElementById("error").innerHTML = ("Please enter a username!");
         return false;
     }
+    else {
+        localStorage.setItem("userNameKey", nameValue);
+    }
 }
+
+function homeStorage(){
+    let userNameValue = localStorage.getItem("userNameKey");
+    let scoreValue = localStorage.getItem("scoreKey");
+
+    if (userNameValue) {
+        document.getElementById("username").value = userNameValue;
+        document.getElementById("welcomeback").innerHTML = ("Welcome back " + userNameValue + "! Let's try beat your last score of " + scoreValue);
+    }
+}
+
 let easyQuestions = [
     {
         question: "What color is the body of the boat?",
@@ -224,6 +238,7 @@ function showScore() {
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
     openPopup();
+    localStorage.setItem("scoreKey", score);
 }
 function handleNextButton() {
     currentQuestionIndex++;
@@ -240,6 +255,6 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 });
+
 startQuiz();
 
-openPopup();
