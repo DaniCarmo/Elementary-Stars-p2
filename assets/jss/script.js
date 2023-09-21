@@ -1,24 +1,3 @@
-function validateForm() {
-    let nameValue = document.forms["myForm"]["username"].value;
-    if (nameValue == "") {
-        document.getElementById("error").innerHTML = ("Please enter a username!");
-        return false;
-    }
-    else {
-        localStorage.setItem("userNameKey", nameValue);
-    }
-}
-
-function homeStorage(){
-    let userNameValue = localStorage.getItem("userNameKey");
-    let scoreValue = localStorage.getItem("scoreKey");
-
-    if (userNameValue) {
-        document.getElementById("username").value = userNameValue;
-        document.getElementById("welcomeback").innerHTML = ("Welcome back " + userNameValue + "! Let's try beat your last score of " + scoreValue + "!");
-    }
-}
-
 let easyQuestions = [
     {
         question: "What color is the body of the boat?",
@@ -161,28 +140,66 @@ let masterQuestions = [
     }
 ];
 
-let difficulty = document.getElementById("difficulty").innerHTML;
+// Get DOM elements
+let popup = document.getElementById("popup");
 let questionElement = document.getElementById("question");
 let answerButton = document.getElementById("answer-buttons");
 let nextButton = document.getElementById("next-btn");
+
+// Set quiz variables
 let currentQuestionIndex = 0;
 let score = 0;
 let questions = [];
 
-if (difficulty === "Kindergarten Stars / Easy-Peasy") {
-    questions = easyQuestions;
-} else if (difficulty === "Kindergarten Stars / Smartie Pants") {
-    questions = smartQuestions;
-} else {
-    questions = masterQuestions;
+// Function for validating the user name form value and adding it to localstorage
+function validateForm() {
+    let nameValue = document.forms["myForm"]["username"].value;
+    if (nameValue == "") {
+        document.getElementById("error").innerHTML = ("Please enter a username!");
+        return false;
+    }
+    else {
+        localStorage.setItem("userNameKey", nameValue);
+    }
 }
 
+// Function for retrieving localstorage values and displying on the homepage only
+if (window.location.pathname === '/index.html') {
+    let userNameValue = localStorage.getItem("userNameKey");
+    let scoreValue = localStorage.getItem("scoreKey");
+
+    if (userNameValue) {
+        document.getElementById("username").value = userNameValue;
+        document.getElementById("welcomeback").innerHTML = ("Welcome back " + userNameValue + "! Let's try to beat your last score of " + scoreValue + "!");
+    }
+}
+
+// Function to set questions based on difficulty
+function setDifficulty() {
+    let difficulty = document.getElementById("difficulty");
+    // If the DOM element exists, get its value and set the questions
+    if (difficulty) {
+        difficulty = difficulty.innerHTML;
+        if (difficulty === "Kindergarten Stars / Easy-Peasy") {
+            questions = easyQuestions;
+        } else if (difficulty === "Kindergarten Stars / Smartie Pants") {
+            questions = smartQuestions;
+        } else {
+            questions = masterQuestions;
+        }
+    }
+}
+
+// Function to start the quiz
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
+    setDifficulty();
     showQuestion();
 }
+
+// Function to display a question
 function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -200,12 +217,16 @@ function showQuestion() {
         button.addEventListener("click", selectAnswer);
     });
 }
+
+// Function to reset the state and hide the next button
 function resetState() {
     nextButton.style.display = "none";
     while (answerButton.firstChild) {
         answerButton.removeChild(answerButton.firstChild);
     }
 }
+
+// Function to handle the answer selected
 function selectAnswer(e) {
     let selectedBtn = e.target;
     let isCorrect = selectedBtn.dataset.correct === "true";
@@ -221,17 +242,20 @@ function selectAnswer(e) {
         }
         button.disabled = true;
     });
-    nextButton.style.display = "block";
+    nextButton.style.display = "block"; 
 }
-let popup = document.getElementById("popup");
 
+// Function to open the score popup
 function openPopup() {
     popup.classList.add("open-popup");
 }
+
+// Function to close the score popup
 function closePopup() {
     popup.classList.remove("open-popup");
 }
 
+// Function to display the final score
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
@@ -240,6 +264,8 @@ function showScore() {
     openPopup();
     localStorage.setItem("scoreKey", score);
 }
+
+// Function to handle the next question or show the score
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -248,13 +274,17 @@ function handleNextButton() {
         showScore();
     }
 }
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    } else {
-        startQuiz();
-    }
-});
 
-startQuiz();
+// If the next button exists add an event listener for next Q or restart the quiz
+if (nextButton){
+    
+    nextButton.addEventListener("click", () => {
+        if (currentQuestionIndex < questions.length) {
+            handleNextButton();
+        } else {
+            startQuiz();
+        }
+    });
 
+    startQuiz();
+}
