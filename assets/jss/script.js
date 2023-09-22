@@ -1,3 +1,4 @@
+// quiz questions
 let easyQuestions = [
     {
         question: "What color is the body of the boat?",
@@ -139,7 +140,14 @@ let masterQuestions = [
         ]
     }
 ];
-
+//function to suffle array questions
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); // Generate a random index between 0 and i
+        // Swap array[i] and array[j]
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 // Get DOM elements
 let popup = document.getElementById("popup");
 let questionElement = document.getElementById("question");
@@ -159,7 +167,12 @@ function validateForm() {
         return false;
     }
     else {
-        localStorage.setItem("userNameKey", nameValue);
+        try {
+            localStorage.setItem("userNameKey", nameValue);
+            return true;
+        } catch (exception) {
+            return false;
+        }
     }
 }
 
@@ -182,10 +195,13 @@ function setDifficulty() {
         difficulty = difficulty.innerHTML;
         if (difficulty === "Kindergarten Stars / Easy-Peasy") {
             questions = easyQuestions;
+            shuffleArray(questions);
         } else if (difficulty === "Kindergarten Stars / Smartie Pants") {
             questions = smartQuestions;
+            shuffleArray(questions);
         } else {
             questions = masterQuestions;
+            shuffleArray(uestions);
         }
     }
 }
@@ -242,7 +258,7 @@ function selectAnswer(e) {
         }
         button.disabled = true;
     });
-    nextButton.style.display = "block"; 
+    nextButton.style.display = "block";
 }
 
 // Function to open the score popup
@@ -262,7 +278,12 @@ function showScore() {
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
     openPopup();
-    localStorage.setItem("scoreKey", score);
+    try {
+        localStorage.setItem("scoreKey", score);
+        return true;
+    } catch (exception) {
+        return false;
+    }
 }
 
 // Function to handle the next question or show the score
@@ -276,8 +297,8 @@ function handleNextButton() {
 }
 
 // If the next button exists add an event listener for next Q or restart the quiz
-if (nextButton){
-    
+if (nextButton) {
+
     nextButton.addEventListener("click", () => {
         if (currentQuestionIndex < questions.length) {
             handleNextButton();
