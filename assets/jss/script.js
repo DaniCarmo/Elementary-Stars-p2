@@ -201,7 +201,7 @@ function setDifficulty() {
             shuffleArray(questions);
         } else {
             questions = masterQuestions;
-            shuffleArray(uestions);
+            shuffleArray(questions);
         }
     }
 }
