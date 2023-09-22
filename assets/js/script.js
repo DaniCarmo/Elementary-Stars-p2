@@ -1,4 +1,3 @@
-// quiz questions
 let easyQuestions = [
     {
         question: "What color is the body of the boat?",
