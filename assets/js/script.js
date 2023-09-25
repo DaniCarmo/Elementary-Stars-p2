@@ -186,6 +186,18 @@ if (window.location.pathname === '/index.html') {
     }
 }
 
+//function for sticky nav
+const navbar = document.getElementById('navbar');
+
+function handleScroll() {
+    if (window.pageYOffset >= navbar.offsetTop) {
+        navbar.classList.add('stickTop');
+    } else {
+        navbar.classList.remove('stickTop');
+    }
+}
+window.addEventListener('scroll', handleScroll);
+
 // Function to set questions based on difficulty
 function setDifficulty() {
     let difficulty = document.getElementById("difficulty");
