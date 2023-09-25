@@ -92,6 +92,12 @@ h1 {
     height: 13px;
 }
 
+/*images*/
+.head-images {
+    width: 100%;
+    height: 100%;
+}
+
 /*levels page*/
 .starDiv {
     padding: 0 30px;
