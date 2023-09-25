@@ -138,9 +138,6 @@ h1 {
     padding-top: 20px;
     background-color: #76e5ff;
     border-bottom: 1px solid #76e5ff;
-}
-.stickTop {
-    border-bottom: 1px solid #d15d46;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -300,6 +297,9 @@ h1 {
 }
 
 /*media queries*/
+@media (min-width: 280px) and (max-width: 599px) {
+
+}
 @media (min-width: 600px) {
     .quiz-container {
         padding: 10px;
