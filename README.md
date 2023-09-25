@@ -82,7 +82,7 @@ As a returning user I want to:
 ### Home Page Logo
 
 - The landing includes the quiz name "Kindergarten Stars" with a logo picture of an open book with pop up features.
-- This section introduces the user to Kindergraten Stars with fun colors and a child friendly vibe and cartton pictures, that follows across the site.
+- This section introduces the user to Kindergraten Stars with fun colors and a child friendly vibe and cartoon pictures, that follows across the site.
   
 ### Username Input
 
@@ -111,7 +111,7 @@ As a returning user I want to:
 ### Store username and score
 
 - At the end of each quiz the username will be provided with their score and the option to play again.
-- Usernames and scores are also stored in local storage so the user can see what their previous score was when they return to the site and their username will also be autofilled in to the username field for ease of access to the quiz, this can be deleted or amended if there is a different user from the same PC or if the user simply would like to user a different username.
+- Usernames and scores are also stored in local storage so the user can see what their previous score was when they return to the site and their username will also be autofilled in to the username field for ease of access to the quiz, this can be deleted or amended if there is a different user from the same PC or if the user simply would like to user a different username. The welcome back message and the storage of scores encourages the user to come back to the quiz again and again to practice.
   
 ### Modal
 
@@ -122,7 +122,8 @@ As a returning user I want to:
 ### Multiplayer games
 
 - It would be a fabtastic option for the user to be able to log in and play with their friends from different PCs and mobile devices, so they can view eachothers usernames and scores as they play. This is a feature that could be implemented once I have better knowledge and the skill set to do so.
-- Currently ecch level has 5 questions that are reiterated again and again in random order. But a future element of the quiz would be to add a lot more questions to provide a more extensive learning experience for the user.
+- Currently each level has 5 questions that are reiterated again and again in random order. But a future element of the quiz would be to add a lot more questions to provide a more extensive learning experience for the user.
+- With the separation of concerns principle in mind I would also create two separate javascript files so that the quiz questions could be stored separately in one and functions, event listeners, etc in the other.
 
 # Design of Website
 
@@ -140,19 +141,16 @@ The fonts for the site came from [Google Fonts](https://fonts.googleapis.com)
 
 All the text is one font to keep the site simple and streamlined in design: Comic Neue
 
-Comic Neue offers an informal touch to the site and the rounded edges give a playful feel to the whole site which in in keeping with the playful vibe for the targeted audience.
+Comic Neue offers an informal touch to the site and the rounded edges give a playful feel to the whole site which in in keeping with the playful vibe for the targeted audience. I created the heading/logo text myself from the Comic Neue font and CSS styling with border shadows, the bubble effect of the text gives a youthful feel to the site along with the bright colors of the white and orange.
 
 ## Color Scheme
 
-The color scheme is based around a sunset, bringing in purple, red and peachy-pinks creates that sunset beach vibes that are being conveyed to the user. The colors provide a fun yet and serene viewing experience. The color scheme is by choice minimalist with the same colors used throughout the website, in keeping with the overall mood of a beach sunset. The background is a neutral white which in contrast to the soft red and pinks, provides a fresh and modern aspect to the website.
-
-The main color used throughout is #F88379 and the background color for the aside was also inspired by the hero image, taking the deeper purple colors I went with #705260.
+The color scheme is based around the main home page image of the open pop-up book. I pulled the colors for the background of the site and the border colors from this image.
+The background color used is a light blue with hex code #76e5ff, this give a fresh feel to the site and is an inviting pop of color. The other two main colors used are for the buttons, form and quiz borders, for these I went with two colors also pulled from the main image, an orange #ff8c00 and maroon red #d15d46. These colors provide a nice contrast across the site and compliment each other well. There are also different colors on the level buttons on the game.html page, to help the user identify the different levels. The font across the site is a dark slate grey, this gives a softer feel than using a harsh black, while some buttons have white text with a color background to pop and stand out.
 
 ## Images
 
-All images were downloaded from Pexel. The main image used for the homepage banner, gallery and timetable backgrounds is a serene pink and purple hue picture of a sky mirrored in still water below.
-
-The Gallery page also has images from Pexel that show people practicing yoga and meditation on the beach, both solo and in groups, as well as friendly get togethers on the beach with food and music, to evoke a sense of community to the user.
+All images were downloaded from Clean PNG. The images throughout the site follow the same simple design and provide fun visuals to the user, pulling in the blue, yellow and orange colors of the site.
 
 # Languages
 
@@ -294,11 +292,9 @@ Manual testing was carried out on all elements and features of the site, ensurin
 ## Content
 
 - Instructions on how to implement flexbox gallery grid on the Gallery page was taken from [@Divinector](https://www.youtube.com/@Divinector)
-- Instructions on how to create timetable on the Classes page was taken from [@GreatStackDev](https://www.youtube.com/@GreatStackDev)
+- Followed a tutorial for creating quiz on [@GreatStackDev](https://www.youtube.com/@GreatStackDev)
 - Utilised [W3 Schools](https://www.w3schools.com/) and [StackOverflow](https://stackoverflow.com/) for troubleshooting throughout the project.
 
 ## Media
 
-- The photos used throughout the website were downloaded from [Pexels](https://www.pexels.com/)
-- The social media icons in the header were taken from [Font Awesome](https://fontawesome.com/)
-- Video on the About page is embeded from a YouTube chanel [My Best Self 101](https://www.youtube.com/watch?v=q1VX_RgRHPs&t=1s&pp=ygUTd2hhdCBpcyBtaW5kZnVsbmVzcw%3D%3D)
+- The photos used throughout the website were downloaded from [Clean PNG](https://www.pexels.com/)
