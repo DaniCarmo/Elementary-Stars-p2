@@ -120,12 +120,7 @@ h1 {
     height: 13px;
 }
 
-/*gamepage header*/
-.back-to-main:hover {
-    color: maroon;
-    text-decoration: underline;
-}
-
+/*levels page*/
 .starDiv {
     padding: 40px;
 }
@@ -172,12 +167,17 @@ h1 {
     background-color: #baffc9;
 }
 
-/*nav bar on levels pages*/
+/*nav bar*/
 .navbar {
     padding-bottom: 40px;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #76e5ff;
+    border-bottom: 1px solid #76e5ff;
 }
 
-.back-to-main,
 .navbar a {
     padding: 15px;
     text-decoration: none;
