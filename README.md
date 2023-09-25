@@ -26,7 +26,7 @@
 - [Design of Website](#design-of-website)
   - [Wireframes](#wireframes)
     - [Home Page](#home-page)
-    - [Game Page - Chose a Level](#game-page---chose-a-level)
+    - [Game Page - Choose a Level](#game-page---choose-a-level)
     - [Levels 1-3](#levels-1-3)
   - [Fonts](#fonts)
   - [Color Scheme](#color-scheme)
@@ -80,20 +80,29 @@ As a returning user I want to:
 - Featured on the game.html page to return Home, as well as the three levels pages to either return Home or go back to the game page to chose a level, the fully responsive navigation bar includes two links. It is identical on each page to allow for easy navigation.
 - This will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 - A feature of this navbar is that it is sticky so will always stay at the top of the page when user is scrolling, this allow for better ux design so user can navigate easier and quicker without having to scroll to top.
+
+![navbar](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/level%20nav.png?raw=true)
   
 ### Home Page Logo
 
 - The landing includes the quiz name "Kindergarten Stars" with a logo picture of an open book with pop up features.
 - This section introduces the user to Kindergraten Stars with fun colors and a child friendly vibe and cartoon pictures, that follows across the site.
+
+![homepage]()
   
 ### Username Input
 
 - This username form will allow the players to enter a username which will be tracked by the site and linked to their highscore, to provide a better user experience as the user can keep record of their highscore each time they play or log back in to the quiz.
 - This form also uses javascript form validation to ensure the player enters a username before they can carry on with the quiz.
+
+![form-validation](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/username%20validation.png?raw=true)
   
 ### Levels Page
 
 - This page allows the user to chose a level and the levels have kid-friendly names so they can be identified by a child as to how easy or hard they are, level one being the easiest "Easy-peasy", level two "Smarty Pants" is for confident players, and finally level three is for advanced players "Quiz Master".
+
+![levels-page]()
+
 - The level buttons are large and color coded to help a child chose a level easily and upon return they will be able to recognice each level by the color.
 - The page also has an image of a smiling cartoon star to reflect the name of the quiz "Elementary Stars" and provides a light and fun spirit that is also easy on the eye for the user.
   
@@ -105,19 +114,32 @@ As a returning user I want to:
 ### Quiz Container
 
 - The quiz questions and answers are contained in a large white box with orange and maroon color borders, following on with the color scheme of the site. The quiz container is large and clear so that the indended user can easily identify where their input is required and read the questions cleary and without any confusion as to what is required.
+
+![quiz-box](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/quiz%20example.png?raw=true)
   
 ### Hidden Next Button
 
 - The 'Next' button is hidden until the user selects an answer, this again helps with eliminating any confusion as to what is required from the user, they must first select an answer and then the next button will appear and they can then move on to the next question.
+
+![hidden-next](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/next%20btn%20hidden.png?raw=true)
+
+![visible-next](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/next%20btn%20visible.png?raw=true)
   
 ### Store username and score
 
 - At the end of each quiz the username will be provided with their score and the option to play again.
+
+![score](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/show%20score.png?raw=true)
+
 - Usernames and scores are also stored in local storage so the user can see what their previous score was when they return to the site and their username will also be autofilled in to the username field for ease of access to the quiz, this can be deleted or amended if there is a different user from the same PC or if the user simply would like to user a different username. The welcome back message and the storage of scores encourages the user to come back to the quiz again and again to practice.
+
+![welcome-back](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/welcome%20back.png?raw=true)
   
 ### Modal
 
 - Another feature of the quiz is a pop up when the user is finished the quiz, a modal pop ups to advise the user of the Kindergarten Stars youtube page, where they can find more learning resources and fun vidoes. Also included in the modal is the star image from the game.html page, which gives a nice flow to the site by re-using this image.
+
+![modal](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/modal.png?raw=true)
   
 ## Future Features
 
@@ -140,9 +162,21 @@ As a returning user I want to:
 
 ### Home Page
 
-### Game Page - Chose a Level
+![pc-home](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/pc_home.png?raw=true)
+
+![mobile-home](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/wireframe_home.png?raw=true)
+
+### Game Page - Choose a Level
+
+![pc-levels](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/pc_levels.png?raw=true)
+
+![mobile-levels](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/wireframe_levels.png?raw=true)
 
 ### Levels 1-3
+
+![pc-quiz](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/pc_quizpages.png?raw=true)
+
+![mobile-quiz](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/wireframe_quizpages.png?raw=true)
 
 ## Fonts
 
@@ -152,9 +186,14 @@ All the text is one font to keep the site simple and streamlined in design: Comi
 
 Comic Neue offers an informal touch to the site and the rounded edges give a playful feel to the whole site which in in keeping with the playful vibe for the targeted audience. I created the heading/logo text myself from the Comic Neue font and CSS styling with border shadows, the bubble effect of the text gives a youthful feel to the site along with the bright colors of the white and orange.
 
+![heading](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/heading-logo.png?raw=true)
+
 ## Color Scheme
 
 The color scheme is based around the main home page image of the open pop-up book. I pulled the colors for the background of the site and the border colors from this image.
+
+![home-image](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/color-picker.png?raw=true)
+
 The background color used is a light blue with hex code #76e5ff, this give a fresh feel to the site and is an inviting pop of color. The other two main colors used are for the buttons, form and quiz borders, for these I went with two colors also pulled from the main image, an orange #ff8c00 and maroon red #d15d46. These colors provide a nice contrast across the site and compliment each other well. There are also different colors on the level buttons on the game.html page, to help the user identify the different levels. The font across the site is a dark slate grey, this gives a softer feel than using a harsh black, while some buttons have white text with a color background to pop and stand out.
 
 ## Images
@@ -200,7 +239,7 @@ The website was tested on the following browsers and was responsive and compatib
 
 ## Responsiveness
 
-Responsiveness was tested throughout the project using Chrome Developer tools and also ui.dev and responsivedesignchecker.com. All images and features were responsive in various screen sizes and quality was not affected as I was able to amend via media queries in my css file to ensure the website followed good UX design practices on all device screen sizes. Screenshots linked below as examples, site was tested on multiple view ports such as Iphone SE, Samsung Galaxy S8+, iPad Air, iPad Mini, Samsung Galaxy A51/71, Nexus 7 and 9, as well as a 24 inch monitor screen. [Link to Test Screenshots](https://github.com/DaniCarmo/South-West-Yoga-P1/tree/main/assets/testing-images)
+Responsiveness was tested throughout the project using Chrome Developer tools and also ui.dev and responsivedesignchecker.com. All images and features were responsive in various screen sizes and quality was not affected as I was able to amend via media queries in my css file to ensure the website followed good UX design practices on all device screen sizes. Screenshots linked below as examples, site was tested on multiple view ports such as Iphone SE, Samsung Galaxy S8+, iPad Air, iPad Mini, Samsung Galaxy A51/71, Nexus 7 and 9, as well as a 24 inch monitor screen. [Link to Test Screenshots](https://github.com/DaniCarmo/elementary-stars-p2/tree/main/assets/readme-image)
 
 ![home](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/testing-images/lighthouse-home.png?raw=true)
 
@@ -216,25 +255,30 @@ As a first-time user I want to:
 
 Easily navigate through the site and go to the appropriate level for each players ability: This is carried out via the nav bar which is dsplayed at the top of the pages to either bring the user back to home page or the levels page so they can chose their level. The level names reflect the difficulty of the quiz level - Easy-peasy is the easiest level, Smarty Pants is a medium to difficult level for those feeling like a smarty pants, and finally the hardest level is Quiz Master, for users who are masters of the alphabet, numbers, shapes and colors.
 
-![header-navbar](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/header-navbar.PNG?raw=true)
+![header-navbar](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/level%20nav.png?raw=true)
+
+![levels](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/levels.png?raw=true)
 
 Be able to easily identify the purpose of the site. The user can identify what this site is about from the name which is taken from the school system 'Elementary', as well as the other piece of text on the home page under the logo:
 
-![hero-img](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/hero-img.PNG?raw=true)
+![main-text](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/main%20text.png?raw=true)
 
 View the website on both mobile and desktop devices. The site is fully repsonsive on various mobile, tablet and desktop devices, as per screen shots provided in seprate file.
 
 Get a sense of community and welcoming from the Elementary Stars Quiz. This is acheived through the usage of fun and inviting colors and images, as well as the quiz storing the username and providing a welcome back message upon return to the homepage.
 
-![about-pg](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/about-pg.PNG?raw=true)
+![about-pg](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/welcome%20back.png?raw=true)
 
 Interact with the Elementary Stars by following learning videos on the YouTube channel. The modal is incorporated to encourage the user to follow Elementary Stars on YouTube and subscribe to more learning videos.
 
-![newsletter](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/newsletter.PNG?raw=true)
+![newsletter](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/modal.png?raw=true)
 
 As a returning user I want to:
 
 - Practice over and over again to gain confidence and knowledge. This quiz allows the user to 'Play Again' as many times as they like, so they can practice each level over and over again and at their own pace. The user can also see their last scores and are encouraged to try beat this and improve with each try.
+
+![score](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/show%20score.png?raw=true)
+
 - Have the quiz remember my username and last score to log in quicker and easier. Username is stored in local storage so returning users are welcomed back with a personalised message and their username is also pre-populated in to the username field on the homepage, so with one click a returning user can enter the quiz.
 - View the website on both mobile and desktop devices. As mentioned the site is available to view on all devices and all features are fully responsive.
 
