@@ -21,6 +21,8 @@
     - [Modal](#modal)
   - [Future Features](#future-features)
     - [Multiplayer games](#multiplayer-games)
+    - [Larger pool of questions](#larger-pool-of-questions)
+    - [Certificate of Achievement](#certificate-of-achievement)
 - [Design of Website](#design-of-website)
   - [Wireframes](#wireframes)
     - [Home Page](#home-page)
@@ -66,7 +68,7 @@ As a first-time user I want to:
 As a returning user I want to:
 
 - Practice over and over again to gain confidence and knowledge
-- Keep track of highscores
+- Have the quiz remember my username and last score to log in quicker and easier
 - View the website on both mobile and desktop devices
 
 # Features
@@ -122,8 +124,15 @@ As a returning user I want to:
 ### Multiplayer games
 
 - It would be a fabtastic option for the user to be able to log in and play with their friends from different PCs and mobile devices, so they can view eachothers usernames and scores as they play. This is a feature that could be implemented once I have better knowledge and the skill set to do so.
+
+### Larger pool of questions
+
 - Currently each level has 5 questions that are reiterated again and again in random order. But a future element of the quiz would be to add a lot more questions to provide a more extensive learning experience for the user.
 - With the separation of concerns principle in mind I would also create two separate javascript files so that the quiz questions could be stored separately in one and functions, event listeners, etc in the other.
+
+### Certificate of Achievement
+
+- I would like to add a personalised certificate at the end of each quiz whereby the user can download and print if they wish, or a digital badge that can be saved and displayed in an online user area. The certificate will outline their achievement stating the level and score received, this would be an encouraging pat on the back for the user and also lead to repeat site visits. The certificate and badge could also fall in with the multiplayer level feature as friends could view an online shared user area and see what badges other users have achieved.
 
 # Design of Website
 
@@ -163,7 +172,7 @@ The languages used are HTML, CSS and Javascript.
 - Github was used for hosting the site and storing the data and files
 - Google Chrome Developer Tools were used throughout to inspect elements and assist with troubleshooting and debugging
 - [Image Color Picker](https://imagecolorpicker.com/en) was used to get color from the homepage image to use on the form and quiz border and text
-- [Onlinecovert.com](https://www.onlineconvert.com/image-converter) to convert main large images from .jpg to .webp, as suggested by prompt after Lighthouse analysis in dev tools testing
+- [Onlinecovert.com](https://www.onlineconvert.com/image-converter) to convert main large images from .jpg to .webp
   
 # Testing
 
@@ -191,9 +200,7 @@ The website was tested on the following browsers and was responsive and compatib
 
 ## Responsiveness
 
-Responsiveness was tested throughout the project using Chrome Developer tools and also ui.dev and responsivedesignchecker.com. All images and features were responsive in various screen sizes and quality was not affected as I was able to amend via media queries in my css file to ensure the website followed good UX design practices on all device screen sizes. Screenshots linked below as examples, site was tested on multiple view ports such as Iphone SE, Samsung Galaxy S8+, iPad Air, iPad Pro, Samsung Galaxy A51/71 as well as a 24 inch monitor screen. [Link to Test Screenshots](https://github.com/DaniCarmo/South-West-Yoga-P1/tree/main/assets/testing-images)
-
-Using Lighthouse to test responsivenes showed that the performance of the site on mobile was not ideal and the main attribute to this was the hero image being too large and not loading on time. Therefore I researched in to this issue and resolved it by firstly converting the image to a webp file and also resizing the image so a smaller image is now included in the media queries for smaller screens. I also added a preload link to the html file to preload the LCP and optimise the responsiveness of the site.
+Responsiveness was tested throughout the project using Chrome Developer tools and also ui.dev and responsivedesignchecker.com. All images and features were responsive in various screen sizes and quality was not affected as I was able to amend via media queries in my css file to ensure the website followed good UX design practices on all device screen sizes. Screenshots linked below as examples, site was tested on multiple view ports such as Iphone SE, Samsung Galaxy S8+, iPad Air, iPad Mini, Samsung Galaxy A51/71, Nexus 7 and 9, as well as a 24 inch monitor screen. [Link to Test Screenshots](https://github.com/DaniCarmo/South-West-Yoga-P1/tree/main/assets/testing-images)
 
 ![home](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/testing-images/lighthouse-home.png?raw=true)
 
@@ -207,45 +214,33 @@ Using Lighthouse to test responsivenes showed that the performance of the site o
 
 As a first-time user I want to:
 
-Easily navigate through the site and learn more about the benefits of mindfulness, namely yoga and meditation. This is carried out via the nav bar which is dsplayed at the top of all four pages.
+Easily navigate through the site and go to the appropriate level for each players ability: This is carried out via the nav bar which is dsplayed at the top of the pages to either bring the user back to home page or the levels page so they can chose their level. The level names reflect the difficulty of the quiz level - Easy-peasy is the easiest level, Smarty Pants is a medium to difficult level for those feeling like a smarty pants, and finally the hardest level is Quiz Master, for users who are masters of the alphabet, numbers, shapes and colors.
 
 ![header-navbar](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/header-navbar.PNG?raw=true)
 
-Be able to easily identify the purpose of the site. The user can identify what this site is about from the name South West Yoga as well as the home page banner which mentions mindfulness and joining the classes on the beach.
+Be able to easily identify the purpose of the site. The user can identify what this site is about from the name which is taken from the school system 'Elementary', as well as the other piece of text on the home page under the logo:
 
 ![hero-img](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/hero-img.PNG?raw=true)
 
-The user can also watch a quick video on the benefits of mindfulness including mediation and yoga.
-
-![video](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/video.PNG?raw=true)
-
-Find class timetables quickly and effortlessly. This is easily carried out by following the link to timetables in both the nav bar and benefits boxes.
-
-![benefits](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/benefits.PNG?raw=true)
-
-![timetables](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/timetable.PNG?raw=true)
-
 View the website on both mobile and desktop devices. The site is fully repsonsive on various mobile, tablet and desktop devices, as per screen shots provided in seprate file.
 
-Get a sense of community and welcoming from the South West Yoga group. The user can get a sense of community via the gallery page as well as the About page which has more information on the teacher and group facilitator, providing a brief background helps make that connection with the user.
+Get a sense of community and welcoming from the Elementary Stars Quiz. This is acheived through the usage of fun and inviting colors and images, as well as the quiz storing the username and providing a welcome back message upon return to the homepage.
 
 ![about-pg](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/about-pg.PNG?raw=true)
 
-![gallery](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/gallery.PNG?raw=true)
-
-Interact with SWY by following on the various social media platforms and signing up to the newsletter. Users can click on the social media links in the nav bar to follow SWY on Twitter, Instagram and Facebook, as well as sign up to the newsletter which is also a feature on all pages to encourage the user to sign up and participate.
+Interact with the Elementary Stars by following learning videos on the YouTube channel. The modal is incorporated to encourage the user to follow Elementary Stars on YouTube and subscribe to more learning videos.
 
 ![newsletter](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/readme-images/newsletter.PNG?raw=true)
 
 As a returning user I want to:
 
-- Check to see if there are any new photos from the clubs activities. This can be done via the newsletter and blog which will be a future feature, which will have regular updates, as well as checking out the gallery page for new pictures.
-- Find class timetables quickly and effortlessly. The user can identify the timetable page easily as well as any updates via the newsletter subscription.
+- Practice over and over again to gain confidence and knowledge. This quiz allows the user to 'Play Again' as many times as they like, so they can practice each level over and over again and at their own pace. The user can also see their last scores and are encouraged to try beat this and improve with each try.
+- Have the quiz remember my username and last score to log in quicker and easier. Username is stored in local storage so returning users are welcomed back with a personalised message and their username is also pre-populated in to the username field on the homepage, so with one click a returning user can enter the quiz.
 - View the website on both mobile and desktop devices. As mentioned the site is available to view on all devices and all features are fully responsive.
 
 ## Manual Testing
 
-Manual testing was carried out on all elements and features of the site, ensuring no divs overlapped, all internal and external links worked correclty and followed the correct path, and also all elements remain on screen and are legible on all device widths.
+Manual testing was carried out on all elements and features of the site, ensuring no divs overlapped, images did not overflow, all internal links were working correclty and followed the correct path, and also all elements remain on screen and are legible on all device widths.
 
 | Feature              | Expected                                                                                                                                        | Action                                                                                             | Result                                                                                                                                    |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -265,7 +260,7 @@ Manual testing was carried out on all elements and features of the site, ensurin
 2. Scroll Down to the Git Hub Pages Heading.
 3. Select main branch as the source.
 4. Click the Save button.
-5. Click on the link to go to the live deployed page. Link to live wesbite: [Kindergarten Stars]
+5. Click on the link to go to the live deployed page. Link to live wesbite: [Kindergarten Stars](https://danicarmo.github.io/elementary-stars-p2/)
 
 ## Run Project Locally
 
@@ -291,10 +286,9 @@ Manual testing was carried out on all elements and features of the site, ensurin
 
 ## Content
 
-- Instructions on how to implement flexbox gallery grid on the Gallery page was taken from [@Divinector](https://www.youtube.com/@Divinector)
-- Followed a tutorial for creating quiz on [@GreatStackDev](https://www.youtube.com/@GreatStackDev)
+- Followed a tutorial for creating quiz as well as implementing a modal on [@GreatStackDev](https://www.youtube.com/@GreatStackDev)
 - Utilised [W3 Schools](https://www.w3schools.com/) and [StackOverflow](https://stackoverflow.com/) for troubleshooting throughout the project.
 
 ## Media
 
-- The photos used throughout the website were downloaded from [Clean PNG](https://www.pexels.com/)
+- The photos used throughout the website were downloaded from [Clean PNG](https://www.cleanpng.com/)
