@@ -244,13 +244,15 @@ The website was tested on the following browsers and was responsive and compatib
 
 Responsiveness was tested throughout the project using Chrome Developer tools and also ui.dev and responsivedesignchecker.com. All images and features were responsive in various screen sizes and quality was not affected as I was able to amend via media queries in my css file to ensure the website followed good UX design practices on all device screen sizes. Screenshots linked below as examples, site was tested on multiple view ports such as Iphone SE, Samsung Galaxy S8+, iPad Air, iPad Mini, Samsung Galaxy A51/71, Nexus 7 and 9, as well as a 24 inch monitor screen. [Link to Test Screenshots](https://github.com/DaniCarmo/elementary-stars-p2/tree/main/assets/readme-image)
 
-![home](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/testing-images/lighthouse-home.png?raw=true)
+![home](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/Test-screenshots/Lighthouse/lighthouse_home.png?raw=true)
 
-![about](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/testing-images/lighthouse-about.png?raw=true)
+![levels](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/Test-screenshots/Lighthouse/lighthouse_levels.png?raw=true)
 
-![gallery](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/testing-images/lighthouse-gallery.png?raw=true)
+![easy-peasy](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/Test-screenshots/Lighthouse/lighthouse_easypeasy.png?raw=true)
 
-![classes](https://github.com/DaniCarmo/South-West-Yoga-P1/blob/main/assets/testing-images/lighthouse-classes.png?raw=true)
+![smarty-pants](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/Test-screenshots/Lighthouse/lighthouse_smartypants.png?raw=true)
+
+![quiz-master](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/Test-screenshots/Lighthouse/lighthouse_quizmaster.png?raw=true)
 
 ## User Stories Testing
 
