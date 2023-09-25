@@ -10,36 +10,6 @@ body {
     margin: 5px;
 }
 
-/*images to fit and contain to divs*/
-.head-image {
-    width: 500px;
-}
-.star-image {
-    width: 300px;
-    height: 300px;
-    padding-top: 30px;
-}
-.boat-image {
-    width: 400px;
-    height: 300px;
-    padding-top: 30px;
-}
-.smart-image {
-    width: 400px;
-    height: 350px;
-    padding-top: 30px;
-}
-.child-image {
-    max-width: 350px;
-    max-height: 400px;
-    padding-top: 30px;
-}
-.footer-image {
-    max-width: 280px;
-    max-height: 350px;
-    align-self: center;
-}
-
 /*heading*/
 h1 {
     color: #fff;
@@ -377,26 +347,6 @@ h1 {
     .star-div {
         padding: 30px;
     }
-    .head-image {
-        width: 600px;
-    }
-    .star-image {
-        width: 380px;
-        height: 380px;
-    }
-    .boat-image {
-        width: 480px;
-        height: 350px;
-    }
-    .smart-image {
-        width: 420px;
-        height: 380px;
-    }
-    .child-image {
-        max-width: 380px;
-        max-height: 450px;
-        padding-top: 30px;
-    }
 }
 @media (min-width: 1025px) {
     h1 {
@@ -404,5 +354,31 @@ h1 {
     }
     .main-text {
         font-size: 40px;
+    }
+    #navbar a {
+        font-size: 20px;
+    }
+    .lets-play {
+        max-width: 550px;
+        min-height: 250px;
+    }
+    .lets-play label {
+        font-size: 25px;
+    }
+    .lets-play input {
+        padding: 20px;
+    }
+    .levels-area h2 {
+        font-size: 2.5em;
+    }
+    .levels-area button {
+        width: 300px;
+        font-size: 25px;
+    }
+    .quiz h3 {
+        font-size: 25px;
+    }
+    .btn {
+        font-size: 20px;
     }
 }
