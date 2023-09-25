@@ -12,16 +12,26 @@ body {
 
 /*images to fit and contain to divs*/
 .head-image {
-    max-width: 500px;
+    width: 500px;
 }
-.starImg {
-    max-width: 300px;
-    max-height: 300px;
+.star-image {
+    width: 300px;
+    height: 300px;
     padding-top: 30px;
 }
-.other-images {
-    max-width: 300px;
-    max-height: 300px;
+.boat-image {
+    width: 400px;
+    height: 300px;
+    padding-top: 30px;
+}
+.smart-image {
+    width: 400px;
+    height: 350px;
+    padding-top: 30px;
+}
+.child-image {
+    max-width: 350px;
+    max-height: 400px;
     padding-top: 30px;
 }
 .footer-image {
@@ -321,10 +331,6 @@ h1 {
 
 /*media queries*/
 @media (min-width: 600px) {
-    .other-images {
-        max-width: 400px;
-        max-height: 400px;
-    }
     .quiz-container {
         padding: 10px;
         margin: 30px;
@@ -363,16 +369,36 @@ h1 {
         padding: 20px 0;
     }
     .btn {
-        font-size: 17px;
+        font-size: 18px;
     }
     .levels-area {
         padding: 40px 0;
     }
     .star-div {
-        padding: 40px;
+        padding: 30px;
+    }
+    .head-image {
+        width: 600px;
+    }
+    .star-image {
+        width: 380px;
+        height: 380px;
+    }
+    .boat-image {
+        width: 480px;
+        height: 350px;
+    }
+    .smart-image {
+        width: 420px;
+        height: 380px;
+    }
+    .child-image {
+        max-width: 380px;
+        max-height: 450px;
+        padding-top: 30px;
     }
 }
-@media (min-height: 1025px) {
+@media (min-width: 1025px) {
     h1 {
         font-size: 60px;
     }

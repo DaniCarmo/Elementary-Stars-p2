@@ -226,6 +226,8 @@ The code passed through the W3C CSS validator with no errors or warnings.
 
 ### Javascript
 
+A warning popped up to amend code within a function to dot notation as opposed to brackets, which I did for better practice.
+
 ## Browser Compatability
 
 The website was tested on the following browsers and was responsive and compatible:
