@@ -17,7 +17,7 @@
     - [Quiz Pictures](#quiz-pictures)
     - [Quiz Container](#quiz-container)
     - [Hidden Next Button](#hidden-next-button)
-    - [Highscore](#highscore)
+    - [Store username and score](#store-username-and-score)
     - [Modal](#modal)
   - [Future Features](#future-features)
     - [Multiplayer games](#multiplayer-games)
@@ -51,7 +51,7 @@
 
 # Introduction
 
-Kindergraten Stars is a fun and interactive quiz for children aged three to six years of age, who can practice and increase their knowledge of the alphabet, colors, shapes and numbers. This quiz is to provide a fun and friendly vibe for both children and their guardians and provides an inviting space that makes learning fun at home. Players can play as many times as they like while logging their highscore and practice each level to reinforce what they learn at creche/school.
+Kindergarten Stars is a fun and interactive quiz for children aged three to six years of age, who can practice and increase their knowledge of the alphabet, colors, shapes and numbers. This quiz is to provide a fun and friendly vibe for both children and their guardians and provides an inviting space that makes learning fun at home. Players can play as many times as they like while logging their highscore and practice each level to reinforce what they learn at creche/school.
 
 # User Goals and Stories
 
@@ -77,6 +77,7 @@ As a returning user I want to:
 
 - Featured on the game.html page to return Home, as well as the three levels pages to either return Home or go back to the game page to chose a level, the fully responsive navigation bar includes two links. It is identical on each page to allow for easy navigation.
 - This will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+- A feature of this navbar is that it is sticky so will always stay at the top of the page when user is scrolling, this allow for better ux design so user can navigate easier and quicker without having to scroll to top.
   
 ### Home Page Logo
 
@@ -96,29 +97,32 @@ As a returning user I want to:
   
 ### Quiz Pictures
 
-- ...
+- The pictures are all child friendly and easily identifiable, with the logo being an open pop up book as discussed, to attract the user in to the world of Kindergarten Stars as if it were a bok to read full of surprises. The game.html picture is a star to follow on with the theme of the header/logo.
+- The pictures on the levels pages are all placed at the top of the quiz container and they provide nice visuals for the user and more of an interactive experience with the quiz as the user is answering questions related to the images.
 
 ### Quiz Container
 
-- ...
+- The quiz questions and answers are contained in a large white box with orange and maroon color borders, following on with the color scheme of the site. The quiz container is large and clear so that the indended user can easily identify where their input is required and read the questions cleary and without any confusion as to what is required.
   
 ### Hidden Next Button
 
-- ...
+- The 'Next' button is hidden until the user selects an answer, this again helps with eliminating any confusion as to what is required from the user, they must first select an answer and then the next button will appear and they can then move on to the next question.
   
-### Highscore
+### Store username and score
 
-- ...
+- At the end of each quiz the username will be provided with their score and the option to play again.
+- Usernames and scores are also stored in local storage so the user can see what their previous score was when they return to the site and their username will also be autofilled in to the username field for ease of access to the quiz, this can be deleted or amended if there is a different user from the same PC or if the user simply would like to user a different username.
   
 ### Modal
 
-- ...
+- Another feature of the quiz is a pop up when the user is finished the quiz, a modal pop ups to advise the user of the Kindergarten Stars youtube page, where they can find more learning resources and fun vidoes. Also included in the modal is the star image from the game.html page, which gives a nice flow to the site by re-using this image.
   
 ## Future Features
 
 ### Multiplayer games
 
-- ...
+- It would be a fabtastic option for the user to be able to log in and play with their friends from different PCs and mobile devices, so they can view eachothers usernames and scores as they play. This is a feature that could be implemented once I have better knowledge and the skill set to do so.
+- Currently ecch level has 5 questions that are reiterated again and again in random order. But a future element of the quiz would be to add a lot more questions to provide a more extensive learning experience for the user.
 
 # Design of Website
 
@@ -134,9 +138,9 @@ As a returning user I want to:
 
 The fonts for the site came from [Google Fonts](https://fonts.googleapis.com)
 
-The name and headings are Permanent Marker, while the smaller body text is Ysabeau Infant.
+All the text is one font to keep the site simple and streamlined in design: Comic Neue
 
-Permanent Marker offers an informal touch to the site and the rounded edges give a playful feel to the whole site. Ysabeau Infant pairs well with Permanent Marker as both have the rounded edges and informal style, while Ysabeau works well with the smaller text and is very easy to read.
+Comic Neue offers an informal touch to the site and the rounded edges give a playful feel to the whole site which in in keeping with the playful vibe for the targeted audience.
 
 ## Color Scheme
 
