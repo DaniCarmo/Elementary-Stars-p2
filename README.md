@@ -37,6 +37,7 @@
   - [Validation](#validation)
     - [HTML](#html)
     - [CSS](#css)
+    - [Javascript](#javascript)
   - [Browser Compatability](#browser-compatability)
   - [Unfixed Bugs](#unfixed-bugs)
   - [Responsiveness](#responsiveness)
@@ -88,7 +89,7 @@ As a returning user I want to:
 - The landing includes the quiz name "Kindergarten Stars" with a logo picture of an open book with pop up features.
 - This section introduces the user to Kindergraten Stars with fun colors and a child friendly vibe and cartoon pictures, that follows across the site.
 
-![homepage]()
+![homepage](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/homepage.png?raw=true)
   
 ### Username Input
 
@@ -101,7 +102,7 @@ As a returning user I want to:
 
 - This page allows the user to chose a level and the levels have kid-friendly names so they can be identified by a child as to how easy or hard they are, level one being the easiest "Easy-peasy", level two "Smarty Pants" is for confident players, and finally level three is for advanced players "Quiz Master".
 
-![levels-page]()
+![levels-page](https://github.com/DaniCarmo/elementary-stars-p2/blob/main/assets/readme-image/levelspage.png?raw=true)
 
 - The level buttons are large and color coded to help a child chose a level easily and upon return they will be able to recognice each level by the color.
 - The page also has an image of a smiling cartoon star to reflect the name of the quiz "Elementary Stars" and provides a light and fun spirit that is also easy on the eye for the user.
@@ -219,11 +220,11 @@ The languages used are HTML, CSS and Javascript.
 
 ### HTML
 
-...
-
 ### CSS
 
-...
+The code passed through the W3C CSS validator with no errors or warnings.
+
+### Javascript
 
 ## Browser Compatability
 

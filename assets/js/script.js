@@ -161,7 +161,7 @@ let questions = [];
 
 // Function for validating the user name form value and adding it to localstorage
 function validateForm() {
-    let nameValue = document.forms["myForm"]["username"].value;
+    let nameValue = document.forms.myForm.username.value;
     if (nameValue == "") {
         document.getElementById("error").innerHTML = ("Please enter a username!");
         return false;
