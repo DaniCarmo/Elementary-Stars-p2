@@ -1,5 +1,5 @@
 //adding code for js to run on android
-webSettings.setDomStorageEnabled(true);
+webView.getSettings().setJavaScriptEnabled(true);
 
 // Quiz Questions
 let easyQuestions = [
