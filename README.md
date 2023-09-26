@@ -39,7 +39,6 @@
     - [CSS](#css)
     - [Javascript](#javascript)
   - [Browser Compatability](#browser-compatability)
-  - [Unfixed Bugs](#unfixed-bugs)
   - [Responsiveness](#responsiveness)
   - [User Stories Testing](#user-stories-testing)
   - [Manual Testing](#manual-testing)
@@ -229,7 +228,7 @@ The code passed through the Jigsaw CSS validator with no errors or warnings.
 ### Javascript
 
 - A warning popped up to amend code within a function to dot notation as opposed to brackets, which I did for better practice.
-- JSHint shows that there are two unused variables - validateForm and closePopup. However these are functions vital to the workings of the site and are called upon and used.
+- JSHint shows that there are two unused variables - validateForm and closePopup. However these are called in the html pages.
 
 ## Browser Compatability
 
@@ -238,10 +237,6 @@ The website was tested on the following browsers and was responsive and compatib
 - Google Chrome
 - Mozilla Firefox
 - Microsoft Egde
-
-## Unfixed Bugs
-
-...
 
 ## Responsiveness
 
@@ -319,6 +314,8 @@ Manual testing was carried out on all elements and features of the site, ensurin
 | closePopup       | Manipulate the DOM by adding classList to call on close-popup to close the currently opne pop-up/modal                                                                                                                       | Modal is hidden when required                                                                                                                                            |
 | showScore        | Show score to user at the end of quiz and save to local storage and open the modal before user can hit Play Again btn                                                                                                        | function executes as intended as user can view their score and presented with pop up modal info                                                                          |
 | handleNextButton | Function to handle the next question or show the score by calling on showQuestions and showScore functions                                                                                                                   | once all questions have been used in current quiz then the site understands the quiz to be over and will show the score                                                  |
+| showNavbar       | Function to show navbar unless modal has popped up                                                                                                                                                                           | function works correctly                                                                                                                                                 |
+| hideNavbar       | The purpose is to hide the navbar when the modal pops up as the navbar was intruding on the space                                                                                                                            | function works correctly                                                                                                                                                 |
 
 # Deployment
 
@@ -355,7 +352,10 @@ Manual testing was carried out on all elements and features of the site, ensurin
 ## Content
 
 - Followed a tutorial for creating quiz as well as implementing a modal on [@GreatStackDev](https://www.youtube.com/@GreatStackDev)
-- Utilised [W3 Schools](https://www.w3schools.com/) and [StackOverflow](https://stackoverflow.com/) for troubleshooting throughout the project.
+- Utilised the below sites for troubleshooting and guidance throughout the project:
+- [W3 Schools](https://www.w3schools.com/)
+- [StackOverflow](https://stackoverflow.com/)
+- [freecodecamp](https://www.freecodecamp.org/)
 
 ## Media
 

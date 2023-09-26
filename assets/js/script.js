@@ -262,13 +262,15 @@ function selectAnswer(e) {
 }
 let navbar = document.getElementById("navbar");
 
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
-    }
-});
+if(navbar) {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    });
+}
 
 // Function to hide the navbar
 function hideNavbar() {
