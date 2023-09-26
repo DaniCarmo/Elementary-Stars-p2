@@ -220,13 +220,16 @@ The languages used are HTML, CSS and Javascript.
 
 ### HTML
 
+The code passed through the W3C HTML validator with no errors or warnings.
+
 ### CSS
 
-The code passed through the W3C CSS validator with no errors or warnings.
+The code passed through the Jigsaw CSS validator with no errors or warnings.
 
 ### Javascript
 
-A warning popped up to amend code within a function to dot notation as opposed to brackets, which I did for better practice.
+- A warning popped up to amend code within a function to dot notation as opposed to brackets, which I did for better practice.
+- JSHint shows that there are two unused variables - validateForm and closePopup. However these are functions vital to the workings of the site and are called upon and used.
 
 ## Browser Compatability
 
