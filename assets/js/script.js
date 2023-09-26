@@ -261,24 +261,18 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-// To add and remove the 'scrolled' class
-window.addEventListener("scroll", function () {
-    const navbar = document.getElementById("navbar");
-    if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
-});
+let navbar = document.getElementById("navbar");
 
-const navbar = document.getElementById('navbar');
+if (window.scrollY > 0) {
+    navbar.classList.add("sticky");
+}
 // Function to hide the navbar
 function hideNavbar() {
-    navbar.classList.add('hidden-navbar');
+    navbar.classList.add("hidden-navbar");
 }
 // Function to show the navbar
 function showNavbar() {
-    navbar.classList.remove('hidden-navbar');
+    navbar.classList.remove("hidden-navbar");
 }
 // Function to open the score popup
 function openPopup() {

@@ -188,9 +188,10 @@ h1 {
 }
 
 /* Change background color when scrolled */
-.sticky.scrolled {
+.sticky {
     background-color: #ff8c00;
     transition: background-color 0.3s;
+    padding-bottom: 20px;
 }
 
 /*score-area div*/
