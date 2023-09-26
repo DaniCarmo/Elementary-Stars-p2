@@ -176,7 +176,7 @@ function validateForm() {
     }
 }
 
-// Function for retrieving localstorage values and displying on the homepage only
+// For retrieving localstorage values and displaying on the homepage only
 if (window.location.pathname === '/index.html') {
     let userNameValue = localStorage.getItem("userNameKey");
     let scoreValue = localStorage.getItem("scoreKey");
@@ -260,6 +260,16 @@ function selectAnswer(e) {
     });
     nextButton.style.display = "block";
 }
+
+// To add and remove the 'scrolled' class
+window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
 
 const navbar = document.getElementById('navbar');
 // Function to hide the navbar

@@ -187,6 +187,12 @@ h1 {
     display: none;
 }
 
+/* Change background color when scrolled */
+.sticky.scrolled {
+    background-color: #ff8c00;
+    transition: background-color 0.3s;
+}
+
 /*score-area div*/
 .score-area {
     display: flex;
