@@ -260,12 +260,16 @@ function selectAnswer(e) {
     });
     nextButton.style.display = "block";
 }
-
 let navbar = document.getElementById("navbar");
 
-if (window.scrollY > 173) {
-    navbar.classList.add("sticky");
-}
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+});
+
 // Function to hide the navbar
 function hideNavbar() {
     navbar.classList.add("hidden-navbar");
