@@ -1,6 +1,3 @@
-//adding code for js to run on android
-webView.getSettings().setJavaScriptEnabled(true);
-
 // Quiz Questions
 let easyQuestions = [
     {
