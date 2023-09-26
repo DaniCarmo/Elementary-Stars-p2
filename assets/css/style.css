@@ -24,15 +24,18 @@ h1 {
 .home {
     padding-bottom: 30px;
 }
+
 .text-area {
     padding: 5px;
 }
+
 .main-text {
     font-weight: bold;
     padding: 0 5px 30px;
     color: darkslategray;
     font-size: 2em;
 }
+
 #welcomeback {
     color: darkslategray;
     font-size: 1.5em;
@@ -45,6 +48,7 @@ h1 {
     justify-content: center;
     padding: 40px 10px;
 }
+
 .lets-play {
     display: flex;
     flex-direction: column;
@@ -57,17 +61,20 @@ h1 {
     background-color: white;
     justify-content: center;
 }
+
 .lets-play label {
     font-weight: bold;
     color: darkslategray;
     font-size: 20px;
 }
+
 .lets-play input {
     border-radius: 30px;
     border: 2px solid #d15d46;
     padding: 10px;
     margin: 10px;
 }
+
 .lets-play #play {
     background-color: #ff8c00;
     border: #ff8c00;
@@ -76,16 +83,20 @@ h1 {
     font-size: 20px;
     font-family: 'Comic Neue', cursive;
 }
+
 .input-control {
     display: flex;
     flex-direction: column;
 }
+
 .input-control.success input {
     border-color: #09c372;
 }
+
 .input-control.error input {
     border-color: #ff3860;
 }
+
 .input-control .error {
     color: #ff3860;
     font-size: 9px;
@@ -109,10 +120,12 @@ h1 {
     justify-content: center;
     flex-direction: column;
 }
+
 .levels-area h2 {
     color: darkslategray;
     font-size: 2em;
 }
+
 .levels-area button {
     width: 200px;
     align-self: center;
@@ -125,15 +138,19 @@ h1 {
     color: darkslategray;
     font-size: 20px;
 }
+
 .levels-area form {
     padding: 10px 0;
 }
+
 #easy {
     background-color: #ffb3ba;
 }
+
 #smart {
     background-color: #ffffba;
 }
+
 #master {
     background-color: #baffc9;
 }
@@ -148,9 +165,7 @@ h1 {
     top: 0;
     z-index: 100;
 }
-#navbar ul {
-    list-style-type: none;
-}
+
 #navbar a {
     padding: 15px;
     text-decoration: none;
@@ -162,10 +177,14 @@ h1 {
     background-color: white;
     margin: 20px;
 }
+
 #navbar a:hover {
     color: maroon;
-    font-weight: 800;
     text-decoration: underline;
+}
+
+.hidden-navbar {
+    display: none;
 }
 
 /*score-area div*/
@@ -185,6 +204,7 @@ h1 {
     padding: 0 10px 10px;
     align-self: center;
 }
+
 .quiz-container h2 {
     font-size: 24px;
     border-bottom: 2px solid #fbb040;
@@ -192,13 +212,16 @@ h1 {
     font-family: 'Comic Neue', cursive;
     color: #fbb040
 }
+
 .quiz {
     font-family: 'Comic Neue', cursive;
     color: darkslategray;
 }
+
 .quiz h3 {
     font-size: 18px;
 }
+
 .btn {
     background: white;
     font-weight: bold;
@@ -214,12 +237,15 @@ h1 {
     font-family: 'Comic Neue', cursive;
     color: darkslategray;
 }
+
 .btn :hover {
     background-color: #d15d46;
 }
+
 .btn:disabled {
     cursor: no-drop;
 }
+
 #next-btn {
     background: #d15d46;
     font-weight: bold;
@@ -236,6 +262,7 @@ h1 {
 .correct {
     background: #9aeabc;
 }
+
 .incorrect {
     background: #ff9393;
 }
@@ -253,6 +280,7 @@ h1 {
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .popupContent {
     width: 230px;
     background: white;
@@ -266,12 +294,14 @@ h1 {
     color: #333;
     transition: transform 0.4s, top 0.4s;
 }
+
 .open-popup {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .popup img {
     width: 100px;
     margin-top: -25px;
@@ -279,11 +309,13 @@ h1 {
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .popup h2 {
     font-size: 38px;
     font-family: 'Comic Neue', cursive;
     margin: 30px 0 10px;
 }
+
 .popup button {
     width: 100%;
     margin-top: 50px;
@@ -297,6 +329,7 @@ h1 {
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
 /*footer*/
 #footer {
     padding-top: 70px;
@@ -309,82 +342,105 @@ h1 {
         margin: 30px;
         max-width: 450px;
     }
+
     .quiz-container h2 {
         padding: 20px;
         font-size: 30px;
     }
+
     .quiz h3 {
         padding: 10px;
         font-size: 20px;
-        }
+    }
+
     .quiz {
         padding-bottom: 20px;
     }
+
     .btn {
         font-size: 17px;
-        }
+    }
 }
+
 @media (min-width: 780px) {
     .quiz-container {
         padding: 10px;
         margin: 50px;
         max-width: 500px;
     }
+
     .quiz-container h2 {
         padding: 20px;
         font-size: 30px;
     }
+
     .quiz h3 {
         padding: 22px;
         font-size: 20px;
     }
+
     .quiz {
         padding: 20px 0;
     }
+
     .btn {
         font-size: 18px;
     }
+
     .levels-area {
         padding: 40px 0;
     }
+
     .star-div {
         padding: 30px;
     }
 }
+
 @media (min-width: 1025px) {
     h1 {
         font-size: 60px;
     }
+
     .main-text {
         font-size: 40px;
     }
+
     #navbar a {
         font-size: 20px;
     }
+
     .lets-play {
         max-width: 550px;
         min-height: 250px;
     }
+
     .lets-play label {
         font-size: 25px;
     }
+
     .lets-play input {
         padding: 20px;
     }
+
     .levels-area h2 {
         font-size: 2.5em;
     }
+
     .levels-area button {
         width: 300px;
         font-size: 25px;
     }
+
     .quiz h3 {
         font-size: 25px;
     }
+
     .btn {
         font-size: 20px;
     }
-}/*main body*/
+}
+
+/*main body*/
 body {
     background-color: #76e5ff;
     display: flex;
@@ -720,6 +776,7 @@ h1 {
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
 /*footer*/
 #footer {
     padding-top: 70px;

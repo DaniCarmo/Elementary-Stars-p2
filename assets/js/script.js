@@ -261,14 +261,25 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
+const navbar = document.getElementById('navbar');
+// Function to hide the navbar
+function hideNavbar() {
+    navbar.classList.add('hidden-navbar');
+}
+// Function to show the navbar
+function showNavbar() {
+    navbar.classList.remove('hidden-navbar');
+}
 // Function to open the score popup
 function openPopup() {
     popup.classList.add("open-popup");
+    hideNavbar();
 }
 
 // Function to close the score popup
 function closePopup() {
     popup.classList.remove("open-popup");
+    showNavbar();
 }
 
 // Function to display the final score
