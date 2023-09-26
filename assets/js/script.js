@@ -1,3 +1,6 @@
+//adding code for js to run on android
+webSettings.setDomStorageEnabled(true);
+
 // Quiz Questions
 let easyQuestions = [
     {
