@@ -263,7 +263,7 @@ function selectAnswer(e) {
 
 let navbar = document.getElementById("navbar");
 
-if (window.scrollY > 0) {
+if (window.scrollY > 173) {
     navbar.classList.add("sticky");
 }
 // Function to hide the navbar
